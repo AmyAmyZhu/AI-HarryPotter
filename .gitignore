@@ -4,3 +4,7 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+.DS_Store
+.gitignore.swp
+Assignment1/.metadata/*
+Assignment1/Setence Generator/src/.metadata/*

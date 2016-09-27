@@ -1,5 +1,6 @@
 package setence.generator;
 
+import java.io.File;
 import java.util.List;
 
 /*
@@ -17,4 +18,9 @@ public class WordSearchUtil {
     public List<ResultPair> find(String word, String firstPoS,String secondPos){
         return null;
     }
+    
+    public WordSearchUtil(File file) {
+    	
+    }
+    
 }

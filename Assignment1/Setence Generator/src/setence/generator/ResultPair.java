@@ -11,7 +11,28 @@ package setence.generator;
  * @author justinhu
  */
 class ResultPair {
-    String word;
-    double probility;
+    private final String mWord;
+    private final Double mProbility;
+    
+    public ResultPair(String word, double prob) {
+    	mWord = word;
+    	mProbility = prob;
+    }
+
+	/**
+	 * @return the Word
+	 */
+	public String getmWord() {
+		return mWord;
+	}
+
+	/**
+	 * @return the Probility
+	 */
+	public Double getmProbility() {
+		return mProbility;
+	}
+    
+    
     
 }

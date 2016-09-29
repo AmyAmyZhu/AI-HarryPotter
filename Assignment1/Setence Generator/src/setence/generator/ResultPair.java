@@ -22,14 +22,14 @@ class ResultPair {
 	/**
 	 * @return the Word
 	 */
-	public String getmWord() {
+	public String getWord() {
 		return mWord;
 	}
 
 	/**
 	 * @return the Probility
 	 */
-	public Double getmProbility() {
+	public Double getProbility() {
 		return mProbility;
 	}
     

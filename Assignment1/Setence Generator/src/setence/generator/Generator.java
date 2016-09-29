@@ -46,9 +46,9 @@ public class Generator {
             for(ResultPair rp : possibles){
                 Node child = new Node();
                 child.level = parent.level+1;
-                child.cProbility = parent.cProbility * rp.probility;
+                child.cProbility = parent.cProbility * rp.getProbility();
                 child.parent = parent;
-                child.word = rp.word;
+                child.word = rp.getWord();
                 parent.children.add(child);
                 visitedNode ++;
                 if(child.level == sentenceSpec.length){//at leaf, no child

@@ -16,69 +16,71 @@ import java.util.Stack;
  * @author justinhu
  */
 public class Generator {
-
+	public static String resultPattern = "\"%s\"with probability %f\nTotal nodes considered: %d\n";
     Node resultNode = null;
-    double maxProbability = 0;
+    double maxProbability = 0.0;
     int visitedNode = 0;
     Queue<Node> queue = new LinkedList<>(); //BFS
     Stack<Node> stack;                      //DFS
 
     public String generate(String startingWord, String[] sentenceSpec, WordSearchUtil input) {
+    	
+    	resultPattern = "\"%s\"with probability %."+ sentenceSpec.length*3 + "f\nTotal nodes considered: %d\n";
+    	
         Node root = new Node(startingWord, 1, 1, null, new ArrayList<Node>());
-        visitedNode++;
         queue.offer(root);
 
         while (!queue.isEmpty()) {
-            Node parent = queue.poll();
-<<<<<<< 9bb40a2f57fda7a919b01fdd7262dcbfd25eb09e
-            List<ResultPair> possibles = input.find(parent.word, sentenceSpec[parent.level-1],sentenceSpec[parent.level]);
-            for(ResultPair rp : possibles){
-                Node child = new Node();
-                child.level = parent.level+1;
-                child.cProbility = parent.cProbility * rp.getProbility();
-                child.parent = parent;
-                child.word = rp.getWord();
-                parent.children.add(child);
-                visitedNode ++;
-                if(child.level == sentenceSpec.length){//at leaf, no child
-                    child.children = null;
-                    if(child.cProbility >= maxProbility ){
-=======
-
+            Node current = queue.poll();
+            visitedNode++;
             if (resultNode != null) {                             // we have a candidate for best sentence
-                if (parent.getCProbability() <= maxProbability) { // p is less than candidate at mid level, and each future p is <= 1, 
+                if (current.getCProbability() <= maxProbability) { // p is less than candidate at mid level, and each future p is <= 1, 
                     continue;                                   // so we won't achieve better result, just skip
                 }
             }
 
-            int parentLevel = parent.getLevel();
-            List<ResultPair> possibles = input.find(parent.getWord(), sentenceSpec[parentLevel - 1], sentenceSpec[parentLevel]);
-
+            int currentLevel = current.getLevel();
+            List<ResultPair> possibles = input.find(current.getWord(), sentenceSpec[currentLevel - 1], sentenceSpec[currentLevel]);
+            
+            if(possibles == null){
+            	//if(current.getParent() != null){
+            	//	current.getParent().getChildren().remove(current);
+            	//}
+            	continue;
+            }
+            
             for (ResultPair rp : possibles) {
-                Node child = new Node(rp.word, parent.getCProbability() * rp.probility, parentLevel + 1, parent, null);
-                parent.getChildren().add(child);        //TODO: put back use setter ?
-                visitedNode++;
+                Node child = new Node(rp.getWord(), current.getCProbability() * rp.getProbility(), currentLevel + 1, current, null);
+                //current.getChildren().add(child);        //TODO: put back use setter ?
 
-                if (parentLevel + 1 == sentenceSpec.length) {// at end level, no child
+                if (currentLevel + 1 == sentenceSpec.length) {// at end level, no child
+                	visitedNode++;
                     if (child.getCProbability() >= maxProbability) {
->>>>>>> Improve Generator
                         resultNode = child;
                         maxProbability = child.getCProbability();
                     }
                 } else {
-                    child.setChildren(new ArrayList<Node>());
+                    //child.setChildren(new ArrayList<Node>());
                     queue.offer(child);
                 }
             }
         }
-
-        return constructSetence(resultNode);
+        
+        String result = String.format(resultPattern,constructSetence(resultNode),maxProbability, visitedNode);
+    	
+        return result;
     }
 
     private String constructSetence(Node leaf) {
-        if (leaf.getParent() == null) {
-            return leaf.getWord();
+    	String result;
+    	if(leaf == null){
+    		result =  "";
+    	}else if (leaf.getParent() == null) {
+    		result = leaf.getWord();
+        }else{
+        	result =  constructSetence(leaf.getParent()) + " " + leaf.getWord();
         }
-        return constructSetence(leaf.getParent()) + " " + leaf.getWord();
+    	return result;
+    	
     }
 }

@@ -8,3 +8,4 @@ nbdist/
 .gitignore.swp
 Assignment1/.metadata/*
 Assignment1/Setence Generator/src/.metadata/*
+Assignment1/Setence Generator/nbproject/private/

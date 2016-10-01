@@ -28,3 +28,9 @@ had/VBD//t3/TB//0.03
 had/VBD//t4/TB//0.04
 were/VBD//t5/TB//0.05
 were/VBD//t6/TB//0.01
+was/VBD//t1/TC//0.01
+was/VBD//t2/TC//0.02
+had/VBD//t3/TC//0.03
+had/VBD//t4/TC//0.04
+were/VBD//t5/TC//0.05
+were/VBD//t6/TC//1

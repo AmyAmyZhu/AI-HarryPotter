@@ -26,10 +26,10 @@ public class SetenceGenerator {
     	try {
 			input = new WordSearchUtil(Paths.get(pathToTestInputFile));
 			generator = new Generator();
-			System.out.println(generator.generate("benjamin", new String[]{"NNP","VBD","DT","NN"}, input));
-			System.out.println(generator.generate("a", new String[]{"DT","NN","VBD","NNP"}, input));
-			System.out.println(generator.generate("benjamin", new String[]{"NNP","VBD","DT","JJS","NN"}, input));
-			System.out.println(generator.generate("a", new String[]{"DT","NN","VBD","NNP","IN","DT","NN"}, input));
+			System.out.println(generator.generate("benjamin", new String[]{"NNP","VBD","DT","NN"}, "BREADTH_FIRST",input));
+			System.out.println(generator.generate("a", new String[]{"DT","NN","VBD","NNP"}, "BREADTH_FIRST",input));
+			System.out.println(generator.generate("benjamin", new String[]{"NNP","VBD","DT","JJS","NN"},"BREADTH_FIRST", input));
+			System.out.println(generator.generate("a", new String[]{"DT","NN","VBD","NNP","IN","DT","NN"}, "BREADTH_FIRST",input));
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

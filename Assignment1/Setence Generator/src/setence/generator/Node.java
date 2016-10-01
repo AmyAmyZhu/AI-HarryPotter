@@ -5,8 +5,6 @@
  */
 package setence.generator;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author justinhu
@@ -16,14 +14,11 @@ public class Node{
         private double mCProbability;
         private int mLevel;
         private Node mParent;
-        private ArrayList<Node> mChildren;
-        
-        public Node(String word, double probability, int level, Node parent, ArrayList<Node> children){
+        public Node(String word, double probability, int level, Node parent){
             mWord = word;
             mCProbability = probability;
             mLevel = level;
-            mParent = parent;
-            mChildren = children;      
+            mParent = parent;  
         }
 
     public String getWord() {
@@ -56,13 +51,5 @@ public class Node{
 
     public void setParent(Node mParent) {
         this.mParent = mParent;
-    }
-
-    public ArrayList<Node> getChildren() {
-        return mChildren;
-    }
-
-    public void setChildren(ArrayList<Node> mChildren) {
-        this.mChildren = mChildren;
     }
 }

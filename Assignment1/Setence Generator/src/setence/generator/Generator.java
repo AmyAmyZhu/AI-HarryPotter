@@ -1,6 +1,6 @@
 package setence.generator;
 
-import java.util.ArrayList;
+import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -18,24 +18,26 @@ import java.util.Stack;
 public class Generator {
 	public static String resultPattern = "\"%s\"with probability %f\nTotal nodes considered: %d\n";
     
-    //Stack<Node> stack;                      //DFS
-
-    private void reset(){
-    	
-    }
-    public String generate(String startingWord, String[] sentenceSpec, WordSearchUtil input) {
+    public String generate(String startingWord, String[] sentenceSpec, String searchStrategy, WordSearchUtil input) {
     	
     	resultPattern = "\"%s\"with probability %."+ sentenceSpec.length*3 + "f\nTotal nodes considered: %d\n";
     	Node resultNode = null;
         double maxProbability = 0.0;
         int visitedNode = 0;
-        Queue<Node> queue = new LinkedList<>(); //BFS
-        
-        Node root = new Node(startingWord, 1, 1, null, new ArrayList<Node>());
-        queue.offer(root);
+        Collection<Node> c;
+        boolean useQueue;
+        if(searchStrategy == "BREADTH_FIRST" || searchStrategy == "HEURISTIC"){
+        	c = new LinkedList<>();
+        	useQueue = true;
+        }else{
+        	c = new Stack<Node>();
+        	useQueue = false;
+        }
+        Node root = new Node(startingWord, 1, 1, null);
+        c.add(root);
 
-        while (!queue.isEmpty()) {
-            Node current = queue.poll();
+        while (!c.isEmpty()) {
+            Node current = useQueue? ((Queue<Node>) c).poll() : ((Stack<Node>) c).pop();
             visitedNode++;
             if (resultNode != null) {                             // we have a candidate for best sentence
                 if (current.getCProbability() <= maxProbability) { // p is less than candidate at mid level, and each future p is <= 1, 
@@ -47,15 +49,11 @@ public class Generator {
             List<ResultPair> possibles = input.find(current.getWord(), sentenceSpec[currentLevel - 1], sentenceSpec[currentLevel]);
             
             if(possibles == null){
-            	//if(current.getParent() != null){
-            	//	current.getParent().getChildren().remove(current);
-            	//}
             	continue;
             }
             
             for (ResultPair rp : possibles) {
-                Node child = new Node(rp.getWord(), current.getCProbability() * rp.getProbility(), currentLevel + 1, current, null);
-                //current.getChildren().add(child);        //TODO: put back use setter ?
+                Node child = new Node(rp.getWord(), current.getCProbability() * rp.getProbility(), currentLevel + 1, current);
 
                 if (currentLevel + 1 == sentenceSpec.length) {// at end level, no child
                 	visitedNode++;
@@ -64,8 +62,7 @@ public class Generator {
                         maxProbability = child.getCProbability();
                     }
                 } else {
-                    //child.setChildren(new ArrayList<Node>());
-                    queue.offer(child);
+                    c.add(child);
                 }
             }
         }

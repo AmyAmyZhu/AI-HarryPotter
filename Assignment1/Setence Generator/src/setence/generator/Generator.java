@@ -17,16 +17,20 @@ import java.util.Stack;
  */
 public class Generator {
 	public static String resultPattern = "\"%s\"with probability %f\nTotal nodes considered: %d\n";
-    Node resultNode = null;
-    double maxProbability = 0.0;
-    int visitedNode = 0;
-    Queue<Node> queue = new LinkedList<>(); //BFS
-    Stack<Node> stack;                      //DFS
+    
+    //Stack<Node> stack;                      //DFS
 
+    private void reset(){
+    	
+    }
     public String generate(String startingWord, String[] sentenceSpec, WordSearchUtil input) {
     	
     	resultPattern = "\"%s\"with probability %."+ sentenceSpec.length*3 + "f\nTotal nodes considered: %d\n";
-    	
+    	Node resultNode = null;
+        double maxProbability = 0.0;
+        int visitedNode = 0;
+        Queue<Node> queue = new LinkedList<>(); //BFS
+        
         Node root = new Node(startingWord, 1, 1, null, new ArrayList<Node>());
         queue.offer(root);
 

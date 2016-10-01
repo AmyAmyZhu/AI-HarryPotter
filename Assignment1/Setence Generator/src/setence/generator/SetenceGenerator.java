@@ -5,6 +5,9 @@
  */
 package setence.generator;
 
+import java.io.IOException;
+import java.nio.file.Paths;
+
 /**
  *
  * @author justinhu
@@ -16,6 +19,23 @@ public class SetenceGenerator {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+    	final String pathToTestInputFile = "src/input.txt";
+    	WordSearchUtil input;
+    	Generator generator;
+    	
+    	try {
+			input = new WordSearchUtil(Paths.get(pathToTestInputFile));
+			generator = new Generator();
+			System.out.println(generator.generate("benjamin", new String[]{"NNP","VBD","DT","NN"}, input));
+			System.out.println(generator.generate("a", new String[]{"DT","NN","VBD","NNP"}, input));
+			System.out.println(generator.generate("benjamin", new String[]{"NNP","VBD","DT","JJS","NN"}, input));
+			System.out.println(generator.generate("a", new String[]{"DT","NN","VBD","NNP","IN","DT","NN"}, input));
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
     }
     
 }

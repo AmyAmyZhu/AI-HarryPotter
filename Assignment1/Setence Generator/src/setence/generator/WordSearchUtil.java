@@ -11,22 +11,9 @@ import java.util.stream.Stream;
    
 public class WordSearchUtil {
 	
-	/*
-	 * HHH
-	 * 		word1
-	 * 				AAA		
-	 * 						word5, probability
-	 * 						word6
-	 * 				CCC
-	 * 						word1
-	 * 		word2
-	 * AAA
-	 * 		word1
-	 * 		word3
-	 * First word type -> map(First word -> Second word type -> list of second words)
-	 */
-	
 	private HashMap<String, List<ResultPair>> mapToResult;
+	private HashMap<String, Double> mapToHueristicProb;
+	double sum;
 	
     public List<ResultPair> find(String word, String firstWordType,String secondWordType){
     	String key = word + firstWordType + secondWordType;
@@ -34,6 +21,14 @@ public class WordSearchUtil {
     		return (ArrayList<ResultPair>)mapToResult.get(key);
 		}
     	return null;
+    }
+    
+    public Double getHueristicValue(String secondWord, String secondWordType){
+    	String key = secondWord + secondWordType;
+    	if (mapToHueristicProb.containsKey(key)) {
+    		return (double)mapToHueristicProb.get(key);
+		}
+    	return 0.0;
     }
     
     public WordSearchUtil(Path filePath) throws IOException {
@@ -53,7 +48,21 @@ public class WordSearchUtil {
     			}
     			List<ResultPair> currVal = (ArrayList<ResultPair>)mapToResult.get(key);
     			currVal.add(value);
+    			
+    			// Add value to heuristic map
+    			String keyHueristicMap = parsedLine.getSecondWord()
+    					+ parsedLine.getSecondWordType();
+    			if (!mapToHueristicProb.containsKey(keyHueristicMap)) {
+    				mapToHueristicProb.put(keyHueristicMap, 0.0);
+    			}
+    			mapToHueristicProb.put(keyHueristicMap,
+    					mapToHueristicProb.get(keyHueristicMap) + parsedLine.getProbability());
     		});
+    		long numberOfEnteries = stream.count();
+    		mapToHueristicProb.entrySet().stream()
+		    			.forEach(e -> {
+		    				e.setValue(e.getValue()/numberOfEnteries);
+		    			});
     	}
     }
     

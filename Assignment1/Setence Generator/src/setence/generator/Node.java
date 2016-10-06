@@ -9,9 +9,10 @@ package setence.generator;
  *
  * @author justinhu
  */
-public class Node{
+public class Node implements Comparable<Node>{
         private String mWord;
         private double mCProbability;
+        private double mHeuristicValue;
         private int mLevel;
         private Node mParent;
         public Node(String word, double probability, int level, Node parent){
@@ -52,4 +53,17 @@ public class Node{
     public void setParent(Node mParent) {
         this.mParent = mParent;
     }
+
+	@Override
+	public int compareTo(Node o) {
+		return Double.compare(this.mCProbability+this.mHeuristicValue, o.mCProbability+o.mHeuristicValue);
+	}
+
+	public double getHeuristicValue() {
+		return mHeuristicValue;
+	}
+
+	public void setHeuristicValue(double mHeuristicValue) {
+		this.mHeuristicValue = mHeuristicValue;
+	}
 }

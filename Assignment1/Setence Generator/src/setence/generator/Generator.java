@@ -3,6 +3,7 @@ package setence.generator;
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Stack;
 
@@ -25,19 +26,25 @@ public class Generator {
         double maxProbability = 0.0;
         int visitedNode = 0;
         Collection<Node> c;
-        boolean useQueue;
-        if(searchStrategy == "BREADTH_FIRST" || searchStrategy == "HEURISTIC"){
+        if(searchStrategy == "BREADTH_FIRST"){
         	c = new LinkedList<>();
-        	useQueue = true;
-        }else{
+        }else if(searchStrategy == "DEPTH_FIRST"){
         	c = new Stack<Node>();
-        	useQueue = false;
+        }else{
+        	c = new PriorityQueue<Node>();
         }
         Node root = new Node(startingWord, 1, 1, null);
         c.add(root);
 
         while (!c.isEmpty()) {
-            Node current = useQueue? ((Queue<Node>) c).poll() : ((Stack<Node>) c).pop();
+            Node current;
+            if(searchStrategy == "BREADTH_FIRST"){
+            	current = ((Queue<Node>) c).poll() ;
+            }else if(searchStrategy == "DEPTH_FIRST"){
+            	current = ((Stack<Node>) c).pop();
+            }else{
+            	current = ((PriorityQueue<Node>) c).poll();
+            }
             visitedNode++;
             if (resultNode != null) {                             // we have a candidate for best sentence
                 if (current.getCProbability() <= maxProbability) { // p is less than candidate at mid level, and each future p is <= 1, 
@@ -54,7 +61,9 @@ public class Generator {
             
             for (ResultPair rp : possibles) {
                 Node child = new Node(rp.getWord(), current.getCProbability() * rp.getProbility(), currentLevel + 1, current);
-
+                if(searchStrategy == "HEURISTIC"){
+                	child.setHeuristicValue(input.getHeuristicValue(rp.getWord(), sentenceSpec[currentLevel]));
+                }
                 if (currentLevel + 1 == sentenceSpec.length) {// at end level, no child
                 	visitedNode++;
                     if (child.getCProbability() >= maxProbability) {

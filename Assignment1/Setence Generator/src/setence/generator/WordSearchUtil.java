@@ -23,7 +23,7 @@ public class WordSearchUtil {
     	return null;
     }
     
-    public Double getHueristicValue(String secondWord, String secondWordType){
+    public Double getHeuristicValue(String secondWord, String secondWordType){
     	String key = secondWord + secondWordType;
     	if (mapToHueristicProb.containsKey(key)) {
     		return (double)mapToHueristicProb.get(key);

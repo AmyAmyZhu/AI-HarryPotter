@@ -45,13 +45,18 @@ public class Generator {
             	current = ((PriorityQueue<Node>) c).poll();
             }
             visitedNode++;
-            if (resultNode != null) {                             // we have a candidate for best sentence
-                if (current.getCProbability() <= resultNode.getCProbability()) { // p is less than candidate at mid level, and each future p is <= 1, 
-                    continue;                                   // so we won't achieve better result, just skip
-                }
+            if (resultNode != null && (Double.compare(current.getCProbability() , resultNode.getCProbability()) <= 0) ) {                             // we have a candidate for best sentence
+            	continue;                            
             }
-
             int currentLevel = current.getLevel();
+            if (currentLevel == sentenceSpec.length) {// at end level, no child
+                if (resultNode == null || Double.compare(current.getCProbability(), resultNode.getCProbability()) > 0) {
+                	//if(resultNode == null) System.out.println("first setence "+ visitedNode+" level "+currentLevel);
+                	resultNode = current;
+                }
+                continue;
+            } 
+            
             List<ResultPair> possibles = input.find(current.getWord(), sentenceSpec[currentLevel - 1], sentenceSpec[currentLevel]);
             
             if(possibles == null){
@@ -63,14 +68,7 @@ public class Generator {
                 if(searchStrategy == "HEURISTIC"){
                 	child.setHeuristicValue(input.getHeuristicValue(rp.getWord(), sentenceSpec[currentLevel]));
                 }
-                if (currentLevel + 1 == sentenceSpec.length) {// at end level, no child
-                	visitedNode++;
-                    if (resultNode == null || Double.compare(child.getCProbability(), resultNode.getCProbability()) > 0) {
-                    	resultNode = child;
-                    }
-                } else {
-                    c.add(child);
-                }
+                c.add(child);
             }
         }
         

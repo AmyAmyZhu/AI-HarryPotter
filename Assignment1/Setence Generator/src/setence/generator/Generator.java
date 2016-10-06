@@ -23,7 +23,6 @@ public class Generator {
     	
     	resultPattern = "\"%s\"with probability %."+ sentenceSpec.length*3 + "f\nTotal nodes considered: %d\n";
     	Node resultNode = null;
-        double maxProbability = 0.0;
         int visitedNode = 0;
         Collection<Node> c;
         if(searchStrategy == "BREADTH_FIRST"){
@@ -47,7 +46,7 @@ public class Generator {
             }
             visitedNode++;
             if (resultNode != null) {                             // we have a candidate for best sentence
-                if (current.getCProbability() <= maxProbability) { // p is less than candidate at mid level, and each future p is <= 1, 
+                if (current.getCProbability() <= resultNode.getCProbability()) { // p is less than candidate at mid level, and each future p is <= 1, 
                     continue;                                   // so we won't achieve better result, just skip
                 }
             }
@@ -66,9 +65,8 @@ public class Generator {
                 }
                 if (currentLevel + 1 == sentenceSpec.length) {// at end level, no child
                 	visitedNode++;
-                    if (child.getCProbability() >= maxProbability) {
-                        resultNode = child;
-                        maxProbability = child.getCProbability();
+                    if (resultNode == null || Double.compare(child.getCProbability(), resultNode.getCProbability()) > 0) {
+                    	resultNode = child;
                     }
                 } else {
                     c.add(child);
@@ -76,7 +74,7 @@ public class Generator {
             }
         }
         
-        String result = String.format(resultPattern,constructSetence(resultNode),maxProbability, visitedNode);
+        String result = String.format(resultPattern,constructSetence(resultNode),resultNode.getCProbability(), visitedNode);
     	
         return result;
     }

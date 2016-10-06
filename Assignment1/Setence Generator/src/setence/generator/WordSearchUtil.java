@@ -9,14 +9,24 @@ import java.util.List;
 import java.util.stream.Stream;
 
    
+/**
+ * Reads through the file provided and generates helper data stores
+ * to make searching easier - without needing to read the file multiple
+ * times.
+ */
 public class WordSearchUtil {
 	
 	private HashMap<String, List<ResultPair>> mapToResult;
 	private HashMap<String, Double> mapToHueristicProb;
 	private HashMap<String, Integer> mapToTotalSecondWordType;
 
-	double sum;
 	
+    /**
+     * @param word - First word
+     * @param firstWordType
+     * @param secondWordType
+     * @return A list of possible word combinations that fit the syntax provided.
+     */
     public List<ResultPair> find(String word, String firstWordType,String secondWordType){
     	String key = word + firstWordType + secondWordType;
     	if (mapToResult.containsKey(key)) {
@@ -25,6 +35,13 @@ public class WordSearchUtil {
     	return null;
     }
     
+    /**
+     * Uses the Heuristic function to return the heuristic probability of the
+     * provided second word and word type
+     * @param secondWord
+     * @param secondWordType
+     * @return Heuristic value of the given second word and word type.
+     */
     public Double getHeuristicValue(String secondWord, String secondWordType){
     	String key = secondWord + secondWordType;
     	if (mapToHueristicProb.containsKey(key)) {

@@ -7,21 +7,13 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Stack;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/**
- *
- * @author justinhu
- */
 public class Generator {
-	public static String resultPattern = "\"%s\"with probability %f\nTotal nodes considered: %d\n";
     
-    public String generate(String startingWord, String[] sentenceSpec, String searchStrategy, WordSearchUtil input) {
+    public String generate(String startingWord, String[] sentenceSpec,
+    		String searchStrategy, WordSearchUtil input) {
     	
-    	resultPattern = "\"%s\"with probability %."+ sentenceSpec.length*3 + "f\nTotal nodes considered: %d\n";
+    	final String resultPattern = "\"%s\"with probability %."
+    			+ sentenceSpec.length*3 + "f\nTotal nodes considered: %d\n";
     	Node resultNode = null;
         int visitedNode = 0;
         Collection<Node> c;
@@ -64,15 +56,19 @@ public class Generator {
             }
             
             for (ResultPair rp : possibles) {
-                Node child = new Node(rp.getWord(), current.getCProbability() * rp.getProbility(), currentLevel + 1, current);
+                Node child = new Node(rp.getWord(), current.getCProbability()
+                		* rp.getProbility(), currentLevel + 1, current);
                 if(searchStrategy == "HEURISTIC"){
-                	child.setHeuristicValue(input.getHeuristicValue(rp.getWord(), sentenceSpec[currentLevel]));
+                	child.setHeuristicValue(input.getHeuristicValue(rp.getWord(),
+                			sentenceSpec[currentLevel]));
                 }
                 c.add(child);
             }
         }
         
-        String result = String.format(resultPattern,constructSetence(resultNode),resultNode.getCProbability(), visitedNode);
+        String result =
+        		String.format(resultPattern,constructSetence(resultNode),
+        				resultNode.getCProbability(), visitedNode);
     	
         return result;
     }

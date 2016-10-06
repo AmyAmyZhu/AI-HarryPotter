@@ -37,19 +37,23 @@ public class Generator {
             	current = ((PriorityQueue<Node>) c).poll();
             }
             visitedNode++;
-            if (resultNode != null && (Double.compare(current.getCProbability() , resultNode.getCProbability()) <= 0) ) {                             // we have a candidate for best sentence
+            // We have a candidate for best sentence.
+            if (resultNode != null && (Double.compare(current.getCProbability() ,
+            		resultNode.getCProbability()) <= 0) ) {                            
             	continue;                            
             }
             int currentLevel = current.getLevel();
-            if (currentLevel == sentenceSpec.length) {// at end level, no child
-                if (resultNode == null || Double.compare(current.getCProbability(), resultNode.getCProbability()) > 0) {
-                	//if(resultNode == null) System.out.println("first setence "+ visitedNode+" level "+currentLevel);
+            // At end level, no child.
+            if (currentLevel == sentenceSpec.length) {
+                if (resultNode == null || Double.compare(current.getCProbability(),
+                		resultNode.getCProbability()) > 0) {
                 	resultNode = current;
                 }
                 continue;
             } 
             
-            List<ResultPair> possibles = input.find(current.getWord(), sentenceSpec[currentLevel - 1], sentenceSpec[currentLevel]);
+            List<ResultPair> possibles = input.find(current.getWord(),
+            		sentenceSpec[currentLevel - 1], sentenceSpec[currentLevel]);
             
             if(possibles == null){
             	continue;

@@ -34,15 +34,6 @@ public class SetenceGenerator {
 			System.out.println(generator.generate("a", new String[]{
 					"DT","NN","VBD","NNP","IN","DT","NN"}, "DEPTH_FIRST",input));
 			System.out.println("********");
-			
-			System.out.println(generator.generate("benjamin", new String[]{
-					"NNP","VBD","DT","NN"}, "HEURISTIC",input));
-			System.out.println(generator.generate("a", new String[]{
-					"DT","NN","VBD","NNP"}, "HEURISTIC",input));
-			System.out.println(generator.generate("benjamin", new String[]{
-					"NNP","VBD","DT","JJS","NN"},"HEURISTIC", input));
-			System.out.println(generator.generate("a", new String[]{
-					"DT","NN","VBD","NNP","IN","DT","NN"}, "HEURISTIC",input));
 			System.out.println(generator.generate("benjamin", new String[]{
 					"NNP","VBD","DT","NN"}, "HEURISTIC",input));
 			System.out.println(generator.generate("a", new String[]{

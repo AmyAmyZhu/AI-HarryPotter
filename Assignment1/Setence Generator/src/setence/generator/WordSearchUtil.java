@@ -13,6 +13,8 @@ public class WordSearchUtil {
 	
 	private HashMap<String, List<ResultPair>> mapToResult;
 	private HashMap<String, Double> mapToHueristicProb;
+	private HashMap<String, Integer> mapToTotalSecondWordType;
+
 	double sum;
 	
     public List<ResultPair> find(String word, String firstWordType,String secondWordType){
@@ -26,13 +28,16 @@ public class WordSearchUtil {
     public Double getHeuristicValue(String secondWord, String secondWordType){
     	String key = secondWord + secondWordType;
     	if (mapToHueristicProb.containsKey(key)) {
-    		return (double)mapToHueristicProb.get(key);
+    		return (double)mapToHueristicProb.get(key)
+    				/mapToTotalSecondWordType.get(secondWordType);
 		}
     	return 0.0;
     }
     
     public WordSearchUtil(Path filePath) throws IOException {
+    	mapToHueristicProb = new HashMap<>();
     	mapToResult = new HashMap<>();
+    	mapToTotalSecondWordType = new HashMap<>();
     	if (!Files.exists(filePath)) {
     		throw new IOException("No File found!");
     	}
@@ -57,12 +62,19 @@ public class WordSearchUtil {
     			}
     			mapToHueristicProb.put(keyHueristicMap,
     					mapToHueristicProb.get(keyHueristicMap) + parsedLine.getProbability());
+    			
+    			// Keep track of total number of second word types
+    			if (!this.mapToTotalSecondWordType
+    					.containsKey(parsedLine.getSecondWordType())) {
+    				mapToTotalSecondWordType.put(parsedLine.getSecondWordType(), 1);
+    			}
+    			else {
+    				mapToTotalSecondWordType.put(parsedLine.getSecondWordType(),
+    						mapToTotalSecondWordType.get(parsedLine.getSecondWordType()) + 1);
+    			}
+    			
+    			
     		});
-    		long numberOfEnteries = stream.count();
-    		mapToHueristicProb.entrySet().stream()
-		    			.forEach(e -> {
-		    				e.setValue(e.getValue()/numberOfEnteries);
-		    			});
     	}
     }
     

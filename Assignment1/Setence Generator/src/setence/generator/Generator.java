@@ -38,15 +38,15 @@ public class Generator {
             }
             visitedNode++;
             // We have a candidate for best sentence.
-            if (resultNode != null && (Double.compare(current.getCProbability() ,
-            		resultNode.getCProbability()) <= 0) ) {                            
+            if (resultNode != null && (Double.compare(current.getCProbability()*current.getHeuristicValue() ,
+            		resultNode.getCProbability()*resultNode.getHeuristicValue()) <= 0) ) {                            
             	continue;                            
             }
             int currentLevel = current.getLevel();
             // At end level, no child.
             if (currentLevel == sentenceSpec.length) {
-                if (resultNode == null || Double.compare(current.getCProbability(),
-                		resultNode.getCProbability()) > 0) {
+                if (resultNode == null || Double.compare(current.getCProbability()*current.getHeuristicValue() ,
+                		resultNode.getCProbability()*resultNode.getHeuristicValue()) > 0) {
                 	resultNode = current;
                 }
                 continue;

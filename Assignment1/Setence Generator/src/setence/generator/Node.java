@@ -8,7 +8,7 @@ package setence.generator;
 public class Node implements Comparable<Node>{
         private String mWord;
         private double mCProbability;
-        private double mHeuristicValue;
+        private double mHeuristicValue = 1.0;
         private int mLevel;
         private Node mParent;
         public Node(String word, double probability, int level, Node parent){
@@ -52,8 +52,8 @@ public class Node implements Comparable<Node>{
 
 	@Override
 	public int compareTo(Node o) {
-		return Double.compare(this.mCProbability+this.mHeuristicValue,
-				o.mCProbability+o.mHeuristicValue);
+		return Double.compare(o.mCProbability*o.mHeuristicValue,
+				this.mCProbability*this.mHeuristicValue);
 	}
 
 	public double getHeuristicValue() {

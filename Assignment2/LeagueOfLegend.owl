@@ -23,6 +23,38 @@
     
 
 
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ActiveSkill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ActiveSkill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Assassin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Assassin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#BaronNashor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#BaronNashor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EpicMonster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#BlueSentinel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#BlueSentinel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PrimaryMonster"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Buff -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Buff">
@@ -31,9 +63,41 @@
     
 
 
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#CasterMinion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#CasterMinion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Minion"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ChampionSkill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ChampionSkill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ChampionStatistic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ChampionStatistic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#GeneralStatistic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#CloudDragon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#CloudDragon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Dragon"/>
+    </owl:Class>
     
 
 
@@ -45,9 +109,129 @@
     
 
 
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Cunning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Cunning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Mastery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Dragon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Dragon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EpicMonster"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Effect -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Effect"/>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ElderDragon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ElderDragon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Dragon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Energy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ChampionStatistic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EpicMonster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EpicMonster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Monster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ferocity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ferocity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Mastery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Fighter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Fighter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#GeneralStatistic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#GeneralStatistic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Statistic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Glyph -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Glyph">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Rune"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Gromp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Gromp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SecondaryMonster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Health -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Health">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#GeneralStatistic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#InfernalDragon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#InfernalDragon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Dragon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Inhibitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Inhibitor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#InhibitorTurret -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#InhibitorTurret">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Turret"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#InnerTurret -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#InnerTurret">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Turret"/>
+    </owl:Class>
     
 
 
@@ -57,9 +241,97 @@
     
 
 
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ItemSkill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ItemSkill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ItemStatistic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ItemStatistic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Statistic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#JungleMonster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#JungleMonster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Monster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Krugs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Krugs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SecondaryMonster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Level -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Level">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ChampionStatistic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Mage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Mage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Mana -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Mana">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ChampionStatistic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Mark -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Mark">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Rune"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Marksman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Marksman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Mastery -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Mastery"/>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeChampion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeChampion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeMinion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeMinion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Minion"/>
+    </owl:Class>
     
 
 
@@ -75,9 +347,161 @@
     
 
 
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MountainDragon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MountainDragon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Dragon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Nexus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Nexus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#NexusTurrets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#NexusTurrets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Turret"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#OceanDragon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#OceanDragon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Dragon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#OuterTurret -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#OuterTurret">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Turret"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PassiveSkill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PassiveSkill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PrimaryMonster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PrimaryMonster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#JungleMonster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Quintessences -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Quintessences">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Rune"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RangedChampion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RangedChampion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Raptors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Raptors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SecondaryMonster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RedBrambleback -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RedBrambleback">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PrimaryMonster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Resolve -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Resolve">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Mastery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RiftHerald -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RiftHerald">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EpicMonster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RiftScuttler -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RiftScuttler">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#JungleMonster"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Rune -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Rune"/>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RuneEffect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RuneEffect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Rune"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ScaleType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ScaleType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Rune"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Seal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Seal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Rune"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SecondaryMonster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SecondaryMonster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#JungleMonster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SiegeMinion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SiegeMinion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Minion"/>
+    </owl:Class>
     
 
 
@@ -101,7 +525,95 @@
 
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SummonerSpell -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SummonerSpell"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SummonerSpell">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SuperMinion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SuperMinion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Minion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Tank -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Tank">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Team"/>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Tier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Tier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Rune"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Tier1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Tier1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Tier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Tier2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Tier2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Tier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Tier3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Tier3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Tier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ToggleSkill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ToggleSkill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Turret -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Turret">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Wolves -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Wolves">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SecondaryMonster"/>
+    </owl:Class>
     
 
 
@@ -114,7 +626,12 @@
      -->
 
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
-        <rdfs:comment xml:lang="en">To reduce the scenarios and details we need to map to our ontology, let&apos;s restrict the game mode to 5v5 Ranked on Summoner&apos;s Rift</rdfs:comment>
+        <rdfs:comment xml:lang="en">To reduce the scenarios and details we need to map to our ontology, let&apos;s restrict the 
+Game mode: 5v5 Ranked
+Map: Summoner&apos;s Rift
+Champion: 
+ASHE,GAREN,JINX,KHA’ZIX,LISSANDRA,LUX,RYZE,SHYVANA,VARUS,WUKONG
+Item: basic items(no upgrade)</rdfs:comment>
     </rdf:Description>
 </rdf:RDF>
 

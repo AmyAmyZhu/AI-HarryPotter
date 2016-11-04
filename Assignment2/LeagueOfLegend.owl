@@ -15,6 +15,299 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#counters -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#counters">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#isAbilityOf"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility1 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility1">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility1_Modify -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility1_Modify">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility1"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility2">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility2_Modify -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility2_Modify">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility2"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility3 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility3">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility3_Modify -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility3_Modify">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility3"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbilityPassive -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbilityPassive">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbilityUltimate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbilityUltimate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbilityUltimate_Modify -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbilityUltimate_Modify">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbilityUltimate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAutoAttack -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAutoAttack">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#AutoAttack"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasItem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasItem">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Item"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasTeam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasTeam"/>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#isAbilityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#isAbilityOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ability_Power -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ability_Power">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasStats"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Attack_Power -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Attack_Power">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasStats"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Defense_Power -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Defense_Power">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasStats"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Difficulty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Difficulty">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasStats"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasChampionProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasChampionProperties">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasRange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasRange">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Action"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasStats -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasStats">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasChampionProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -23,10 +316,54 @@
     
 
 
-    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ActiveSkill -->
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ability -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ActiveSkill">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Skill"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ability_Power_Scaling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ability_Power_Scaling">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ability_Power"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Entity_Manipulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Airborn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Airborn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ControlAbility"/>
     </owl:Class>
     
 
@@ -39,10 +376,62 @@
     
 
 
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Attack_Damage_Scaling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Attack_Damage_Scaling">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Attack_Power"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Aura -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Aura">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#AutoAttack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#AutoAttack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Action"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#BaronNashor -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#BaronNashor">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EpicMonster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Blind -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Blind">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ControlAbility"/>
     </owl:Class>
     
 
@@ -73,22 +462,37 @@
 
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
-    
-
-
-    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ChampionSkill -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ChampionSkill">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Skill"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasItem"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">6</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Item"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#TeamCharacters"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Minion"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ChampionStatistic -->
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Characters -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ChampionStatistic">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#GeneralStatistic"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Characters">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAutoAttack"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#AutoAttack"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Charm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Charm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ForcedAction"/>
     </owl:Class>
     
 
@@ -97,6 +501,46 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#CloudDragon">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Dragon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Control -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Control">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility"/>
+                                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                                <owl:onClass rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#HeavyControl"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility"/>
+                                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                                <owl:onClass rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ControlAbility"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ControlAbility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ControlAbility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ability"/>
+        <rdfs:isDefinedBy>Control abilities (CC) are grouped into one of two categories depending on whether or not the effect removes total control of the player&apos;s character. 
+
+Heavy Control (Heavy CC) completely removes all control of a character, while other control abilities partially remove the player&apos;s control of a character.</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -117,6 +561,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Disarm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Disarm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ControlAbility"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Dragon -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Dragon">
@@ -127,7 +579,9 @@
 
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Effect -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Effect"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Effect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Action"/>
+    </owl:Class>
     
 
 
@@ -139,11 +593,26 @@
     
 
 
-    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Energy -->
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EnemyModifier -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Energy">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ChampionStatistic"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EnemyModifier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#StatModiyingAbility"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Entangle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Entangle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Disarm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Root"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Entity_Manipulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Entity_Manipulation"/>
     
 
 
@@ -151,6 +620,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EpicMonster">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Monster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Fear -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Fear">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ForcedAction"/>
     </owl:Class>
     
 
@@ -171,10 +648,47 @@
     
 
 
-    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#GeneralStatistic -->
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Flee -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#GeneralStatistic">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Statistic"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Flee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ForcedAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ForcedAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ForcedAction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ControlAbility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#GlobalAbility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#GlobalAbility">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ability"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasRange"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">999999</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ability"/>
+        <rdfs:isDefinedBy>Heavy Control (Heavy CC) completely removes all control of a character, while other abilities may partially remove the player&apos;s control of a character.</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -195,10 +709,48 @@
     
 
 
-    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Health -->
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ground -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Health">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#GeneralStatistic"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ground">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ControlAbility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#HeavyControl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#HeavyControl">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Airborn"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ForcedAction"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Stasis"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Stun"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Suppression"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Suspension"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ControlAbility"/>
+        <rdfs:isDefinedBy>Heavy Control (Heavy CC) completely removes all control of a character, while other abilities may partially remove the player&apos;s control of a character.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Hybird -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Hybird">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ability_Power_Scaling"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Attack_Damage_Scaling"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
     </owl:Class>
     
 
@@ -237,22 +789,8 @@
 
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Item -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Item"/>
-    
-
-
-    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ItemSkill -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ItemSkill">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Skill"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ItemStatistic -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ItemStatistic">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Statistic"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Modifiers"/>
     </owl:Class>
     
 
@@ -265,6 +803,30 @@
     
 
 
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#KnockAside -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#KnockAside">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Airborn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#KnockBack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#KnockBack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Airborn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#KnockUp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#KnockUp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Airborn"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Krugs -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Krugs">
@@ -273,26 +835,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Level -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Level">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ChampionStatistic"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Mage -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Mage">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Mana -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Mana">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ChampionStatistic"/>
     </owl:Class>
     
 
@@ -315,14 +861,43 @@
 
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Mastery -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Mastery"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Mastery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Modifiers"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeChampion -->
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Melee -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeChampion">
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Melee">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAutoAttack"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeAuto"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeAbility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeAbility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeAuto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeAuto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#AutoAttack"/>
     </owl:Class>
     
 
@@ -337,13 +912,33 @@
 
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Minion -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Minion"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Minion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#TeamCharacters"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MobilityAbility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MobilityAbility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Modifiers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Modifiers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Entity_Manipulation"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Monster -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Monster"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Monster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#NuetralCharacters"/>
+    </owl:Class>
     
 
 
@@ -351,6 +946,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MountainDragon">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Dragon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Nearsight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Nearsight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ControlAbility"/>
     </owl:Class>
     
 
@@ -371,6 +974,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#NuetralCharacters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#NuetralCharacters">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Characters"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#OceanDragon -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#OceanDragon">
@@ -387,10 +998,19 @@
     
 
 
-    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PassiveSkill -->
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PassiveAbility -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PassiveSkill">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Skill"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PassiveAbility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Polymorph -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Polymorph">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Disarm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Silence"/>
     </owl:Class>
     
 
@@ -403,6 +1023,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Pull -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Pull">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Airborn"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Quintessences -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Quintessences">
@@ -411,10 +1039,37 @@
     
 
 
-    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RangedChampion -->
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ranged -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RangedChampion">
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ranged">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAutoAttack"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RangedAuto"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RangedAbility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RangedAbility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RangedAuto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RangedAuto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#AutoAttack"/>
     </owl:Class>
     
 
@@ -459,9 +1114,19 @@
     
 
 
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Root -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Root">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ControlAbility"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Rune -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Rune"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Rune">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Modifiers"/>
+    </owl:Class>
     
 
 
@@ -497,6 +1162,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#StatModiyingAbility"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SiegeMinion -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SiegeMinion">
@@ -505,28 +1178,50 @@
     
 
 
-    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Skill -->
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Silence -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Skill"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Silence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ControlAbility"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Statistic -->
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Slow -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Statistic"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Slow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ControlAbility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Stasis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Stasis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ControlAbility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#StatModiyingAbility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#StatModiyingAbility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ability"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Structure -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Structure"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Structure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#TeamCharacters"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SummonerSpell -->
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Stun -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SummonerSpell">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Skill"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Stun">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ControlAbility"/>
     </owl:Class>
     
 
@@ -547,10 +1242,63 @@
     
 
 
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Suppression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Suppression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ControlAbility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Suspension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Suspension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Airborn"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Stun"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Tank -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Tank">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Defense_Power"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#TargetedAbility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#TargetedAbility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RangedAbility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Taunt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Taunt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ForcedAction"/>
     </owl:Class>
     
 
@@ -558,6 +1306,33 @@
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Team -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Team"/>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#TeamCharacters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#TeamCharacters">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#TeamCharacters"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasTeam"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Team"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Characters"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#TeamModifier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#TeamModifier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#StatModiyingAbility"/>
+    </owl:Class>
     
 
 
@@ -593,18 +1368,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ToggleSkill -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ToggleSkill">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Skill"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Turret -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Turret">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RangedAbility"/>
     </owl:Class>
     
 
@@ -614,6 +1389,861 @@
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Wolves">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SecondaryMonster"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Arcane_Mastery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Arcane_Mastery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PassiveAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Aria_of_Perseverance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Aria_of_Perseverance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Aura"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EnemyModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#TeamModifier"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ashe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ashe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Marksman"/>
+        <hasAbility1 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ranger&apos;s_Focus"/>
+        <hasAbility2 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Volley"/>
+        <hasAbility3 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Hawkshot"/>
+        <hasAbilityPassive rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Frost_Shot"/>
+        <hasAbilityUltimate rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Enchanted_Crystal_Arrow"/>
+        <Ability_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Ability_Power>
+        <Attack_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</Attack_Power>
+        <Defense_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</Defense_Power>
+        <Difficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</Difficulty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#BlueTeam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#BlueTeam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Braum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Braum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Support"/>
+        <hasAbility1 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Winter&apos;s_Bite"/>
+        <hasAbility2 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Stand_Behind_Me"/>
+        <hasAbility3 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Unbreakable"/>
+        <hasAbilityPassive rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Concussive_Blows"/>
+        <hasAbilityUltimate rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Glacial_Fissure"/>
+        <Ability_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</Ability_Power>
+        <Attack_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</Attack_Power>
+        <Defense_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</Defense_Power>
+        <Difficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</Difficulty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Burnout -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Burnout">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Aura"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">163</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Burnout_Dragon_Form -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Burnout_Dragon_Form">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Aura"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EnemyModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">163</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Concussive_Blows -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Concussive_Blows">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PassiveAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Stun"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Courage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Courage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PassiveAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+        <isAbilityOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Garen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Crescendo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Crescendo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Stun"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">900</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Crushing_Blow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Crushing_Blow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EnemyModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Cyclone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Cyclone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Aura"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#KnockUp"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">63</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Decisive_Strike -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Decisive_Strike">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Silence"/>
+        <isAbilityOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Garen"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Decoy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Decoy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Aura"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">175</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Demacian_Justice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Demacian_Justice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeAbility"/>
+        <isAbilityOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Garen"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Dragonborn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Dragonborn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PassiveAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Enchanted_Crystal_Arrow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Enchanted_Crystal_Arrow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RangedAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Slow"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Stun"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">999999</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Final_Spark -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Final_Spark">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3340</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Flame_Breath -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Flame_Breath">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EnemyModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">925</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Flame_Breath_Dragon_Form -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Flame_Breath_Dragon_Form">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EnemyModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">925</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Frost_Shot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Frost_Shot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PassiveAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Slow"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Frozen_Tomb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Frozen_Tomb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Slow"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Stasis"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Stun"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#TargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">550</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Garen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Garen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Fighter"/>
+        <hasAbility1 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Decisive_Strike"/>
+        <hasAbility2 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Courage"/>
+        <hasAbility3 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Judgment"/>
+        <hasAbilityPassive rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Perseverance"/>
+        <hasAbilityUltimate rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Demacian_Justice"/>
+        <Ability_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</Ability_Power>
+        <Attack_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</Attack_Power>
+        <Defense_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</Defense_Power>
+        <Difficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</Difficulty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Glacial_Fissure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Glacial_Fissure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#KnockUp"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RangedAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Slow"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1250</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Glacial_Path -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Glacial_Path">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MobilityAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1050</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Hawkshot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Hawkshot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RangedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">999999</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Hymn_of_Valor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Hymn_of_Valor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Aura"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#TeamModifier"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">850</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ice_Shard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ice_Shard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Slow"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">725</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Iceborn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Iceborn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PassiveAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Illumination -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Illumination">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EnemyModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PassiveAbility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Jinx -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Jinx">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Marksman"/>
+        <hasAbility1 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Switcheroo!"/>
+        <hasAbility2 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Zap!"/>
+        <hasAbility3 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Flame_Chompers!"/>
+        <hasAbilityPassive rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Get_Excited!"/>
+        <hasAbilityUltimate rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Super_Mega_Death_Rocket!"/>
+        <Ability_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</Ability_Power>
+        <Attack_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</Attack_Power>
+        <Defense_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Defense_Power>
+        <Difficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</Difficulty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Judgment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Judgment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility"/>
+        <isAbilityOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Garen"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Leap -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Leap">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MobilityAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">700</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Leap_Evolved -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Leap_Evolved">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MobilityAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">900</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Light_Binding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Light_Binding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1175</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Lissandra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Lissandra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Mage"/>
+        <hasAbility1 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ice_Shard"/>
+        <hasAbility2 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ring_of_Frost"/>
+        <hasAbility3 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Glacial_Path"/>
+        <hasAbilityPassive rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Iceborn"/>
+        <hasAbilityUltimate rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Frozen_Tomb"/>
+        <Ability_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</Ability_Power>
+        <Attack_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Attack_Power>
+        <Defense_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</Defense_Power>
+        <Difficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</Difficulty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Lucent_Singularity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Lucent_Singularity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Slow"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1100</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Lux -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Lux">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Mage"/>
+        <hasAbility1 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Light_Binding"/>
+        <hasAbility2 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Prismatic_Barrier"/>
+        <hasAbility3 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Lucent_Singularity"/>
+        <hasAbilityPassive rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Illumination"/>
+        <hasAbilityUltimate rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Final_Spark"/>
+        <Ability_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</Ability_Power>
+        <Attack_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Attack_Power>
+        <Defense_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</Defense_Power>
+        <Difficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</Difficulty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeImmediateProximity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeImmediateProximity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeAuto"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeMediumProximity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeMediumProximity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeAuto"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Nimbus_Strike -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Nimbus_Strike">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#TargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">625</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Overload -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Overload">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EnemyModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PassiveAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Perseverance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Perseverance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PassiveAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+        <isAbilityOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Garen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Power_Chord -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Power_Chord">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PassiveAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#TeamModifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Prismatic_Barrier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Prismatic_Barrier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#TeamModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1075</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Realm_Warp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Realm_Warp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MobilityAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1750</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RedTeam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RedTeam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ring_of_Frost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ring_of_Frost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Root"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">450</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Rune_Prison -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Rune_Prison">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#TargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">615</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ryze -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ryze">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Mage"/>
+        <hasAbility1 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Overload"/>
+        <hasAbility2 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Rune_Prison"/>
+        <hasAbility3 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Spell_Flux"/>
+        <hasAbilityPassive rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Arcane_Mastery"/>
+        <hasAbilityUltimate rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Realm_Warp"/>
+        <Ability_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</Ability_Power>
+        <Attack_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Attack_Power>
+        <Defense_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Defense_Power>
+        <Difficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</Difficulty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Shyvana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Shyvana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Fighter"/>
+        <hasAbility1 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Twin_Bite"/>
+        <hasAbility1 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Twin_Bite_Dragon_Form"/>
+        <hasAbility1_Modify rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Twin_Bite_Dragon_Form"/>
+        <hasAbility2 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Burnout"/>
+        <hasAbility2_Modify rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Burnout_Dragon_Form"/>
+        <hasAbility3 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Flame_Breath"/>
+        <hasAbilityPassive rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Dragonborn"/>
+        <hasAbilityUltimate rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Dragon&apos;s_Descent"/>
+        <Ability_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</Ability_Power>
+        <Attack_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</Attack_Power>
+        <Defense_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</Defense_Power>
+        <Difficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</Difficulty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Sona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Sona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Support"/>
+        <hasAbility1 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Hymn_of_Valor"/>
+        <hasAbility2 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Aria_of_Perseverance"/>
+        <hasAbility3 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Song_of_Celerity"/>
+        <hasAbilityPassive rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Power_Chord"/>
+        <hasAbilityUltimate rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Crescendo"/>
+        <Ability_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</Ability_Power>
+        <Attack_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</Attack_Power>
+        <Defense_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Defense_Power>
+        <Difficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</Difficulty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Song_of_Celerity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Song_of_Celerity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Aura"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EnemyModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Slow"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#TeamModifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Spell_Flux -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Spell_Flux">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EnemyModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#TargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">615</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Stand_Behind_Me -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Stand_Behind_Me">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RangedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">650</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Stone_Skin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Stone_Skin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PassiveAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Taste_Their_Fear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Taste_Their_Fear">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Taste_Their_Fear_Evolved -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Taste_Their_Fear_Evolved">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Twin_Bite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Twin_Bite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Twin_Bite_Dragon_Form -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Twin_Bite_Dragon_Form">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Unbreakable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Unbreakable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeAbility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Unseen_Threat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Unseen_Threat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EnemyModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PassiveAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Void_Assault -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Void_Assault">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PassiveAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Void_Assault_Evolved -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Void_Assault_Evolved">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PassiveAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Void_Spike -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Void_Spike">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EnemyModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Void_Spike_Evolved -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Void_Spike_Evolved">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EnemyModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Volley -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Volley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RangedAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Slow"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Wukong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Wukong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Fighter"/>
+        <hasAbility1 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Crushing_Blow"/>
+        <hasAbility2 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Decoy"/>
+        <hasAbility3 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Nimbus_Strike"/>
+        <hasAbilityPassive rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Stone_Skin"/>
+        <hasAbilityUltimate rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Cyclone"/>
+        <Ability_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Ability_Power>
+        <Attack_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</Attack_Power>
+        <Defense_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</Defense_Power>
+        <Difficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</Difficulty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Dragon&apos;s_Descent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Dragon&apos;s_Descent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#KnockBack"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Flame_Chompers! -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Flame_Chompers!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">900</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Get_Excited! -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Get_Excited!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#PassiveAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Kha&apos;zix -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Kha&apos;zix">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Assassin"/>
+        <hasAbility1 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Taste_Their_Fear"/>
+        <hasAbility1_Modify rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Taste_Their_Fear_Evolved"/>
+        <hasAbility2 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Void_Spike"/>
+        <hasAbility2_Modify rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Void_Spike_Evolved"/>
+        <hasAbility3 rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Leap"/>
+        <hasAbility3_Modify rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Leap_Evolved"/>
+        <hasAbilityPassive rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Unseen_Threat"/>
+        <hasAbilityUltimate rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Void_Assault"/>
+        <hasAbilityUltimate_Modify rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Void_Assault_Evolved"/>
+        <Ability_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</Ability_Power>
+        <Attack_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</Attack_Power>
+        <Defense_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</Defense_Power>
+        <Difficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</Difficulty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ranger&apos;s_Focus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Ranger&apos;s_Focus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RangedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Super_Mega_Death_Rocket! -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Super_Mega_Death_Rocket!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">999999</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Switcheroo! -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Switcheroo!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SelfModifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Winter&apos;s_Bite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Winter&apos;s_Bite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RangedAbility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Slow"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Zap! -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Zap!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Slow"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#UntargetedAbility"/>
+        <hasRange rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</hasRange>
+    </owl:NamedIndividual>
     
 
 
@@ -633,9 +2263,47 @@ Champion:
 ASHE,GAREN,JINX,KHA’ZIX,LISSANDRA,LUX,RYZE,SHYVANA,VARUS,WUKONG
 Item: basic items(no upgrade)</rdfs:comment>
     </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#CasterMinion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeMinion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SiegeMinion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#SuperMinion"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Charm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Fear"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Flee"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Taunt"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#KnockAside"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#KnockBack"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#KnockUp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Pull"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 

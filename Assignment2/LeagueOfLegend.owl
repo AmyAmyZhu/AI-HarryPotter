@@ -32,6 +32,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#doesModify -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#doesModify">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#isModifiedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Entity_Manipulation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Characters"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility">
@@ -133,13 +143,26 @@
 
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasTeam -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasTeam"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasTeam">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Characters"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Team"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#isAbilityOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#isAbilityOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#isModifiedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#isModifiedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Characters"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Entity_Manipulation"/>
+    </owl:ObjectProperty>
     
 
 
@@ -479,6 +502,12 @@
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Characters -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Characters">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#isModifiedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Entity_Manipulation"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAutoAttack"/>
@@ -514,11 +543,20 @@
                     <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Champion"/>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility"/>
-                                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                                <owl:onClass rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#HeavyControl"/>
-                            </owl:Restriction>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility"/>
+                                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                                        <owl:onClass rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#HeavyControl"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility"/>
+                                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                                        <owl:onClass rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#ControlAbility"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAbility"/>
                                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
@@ -572,6 +610,24 @@ Heavy Control (Heavy CC) completely removes all control of a character, while ot
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Dragon -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Dragon">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAutoAttack"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeAuto"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAutoAttack"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RangedAuto"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EpicMonster"/>
     </owl:Class>
     
@@ -612,7 +668,14 @@ Heavy Control (Heavy CC) completely removes all control of a character, while ot
 
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Entity_Manipulation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Entity_Manipulation"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Entity_Manipulation">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#doesModify"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Characters"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
     
 
 
@@ -977,6 +1040,21 @@ Heavy Control (Heavy CC) completely removes all control of a character, while ot
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#NuetralCharacters -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#NuetralCharacters">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#NuetralCharacters"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasTeam"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Team"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Characters"/>
     </owl:Class>
     
@@ -1101,6 +1179,24 @@ Heavy Control (Heavy CC) completely removes all control of a character, while ot
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RiftHerald -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RiftHerald">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAutoAttack"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#RangedAuto"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAutoAttack"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#MeleeAuto"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#EpicMonster"/>
     </owl:Class>
     

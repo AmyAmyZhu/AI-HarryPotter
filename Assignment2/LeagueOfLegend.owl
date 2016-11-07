@@ -35,7 +35,6 @@
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#doesModify -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#doesModify">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#isModifiedBy"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Entity_Manipulation"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Characters"/>
     </owl:ObjectProperty>
@@ -153,16 +152,6 @@
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#isAbilityOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#isAbilityOf"/>
-    
-
-
-    <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#isModifiedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#isModifiedBy">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Characters"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Entity_Manipulation"/>
-    </owl:ObjectProperty>
     
 
 
@@ -502,12 +491,6 @@
     <!-- http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Characters -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Characters">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#isModifiedBy"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Entity_Manipulation"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasAutoAttack"/>
@@ -1414,7 +1397,8 @@ Heavy Control (Heavy CC) completely removes all control of a character, while ot
                     <rdf:Description rdf:about="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#TeamCharacters"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#hasTeam"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Team"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#Team"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2356,8 +2340,11 @@ Heavy Control (Heavy CC) completely removes all control of a character, while ot
 Game mode: 5v5 Ranked
 Map: Summoner&apos;s Rift
 Champion: 
-ASHE,GAREN,JINX,KHA’ZIX,LISSANDRA,LUX,RYZE,SHYVANA,VARUS,WUKONG
-Item: basic items(no upgrade)</rdfs:comment>
+ASHE,GAREN,JINX,KHA’ZIX,LISSANDRA,LUX,RYZE,SHYVANA,WUKONG
+Abilities:
+For champions above
+
+For the constraint of time, focus for ontology was given on champions and their abilities more so any other relationship.</rdfs:comment>
     </rdf:Description>
     
 

@@ -1,0 +1,1383 @@
+Prefix(:=<http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology>
+<http://www.semanticweb.org/CS486/ontologies/League-Of-Legend-ontology>
+
+Declaration(Class(:Ability))
+Declaration(Class(:Ability_Power_Scaling))
+Declaration(Class(:Action))
+Declaration(Class(:Airborn))
+Declaration(Class(:Assassin))
+Declaration(Class(:Attack_Damage_Scaling))
+Declaration(Class(:Aura))
+Declaration(Class(:AutoAttack))
+Declaration(Class(:BaronNashor))
+Declaration(Class(:Blind))
+Declaration(Class(:BlueSentinel))
+Declaration(Class(:Buff))
+Declaration(Class(:CasterMinion))
+Declaration(Class(:Champion))
+Declaration(Class(:Characters))
+Declaration(Class(:Charm))
+Declaration(Class(:CloudDragon))
+Declaration(Class(:Control))
+Declaration(Class(:ControlAbility))
+Declaration(Class(:CrowdControl))
+Declaration(Class(:Cunning))
+Declaration(Class(:Disarm))
+Declaration(Class(:Dragon))
+Declaration(Class(:Effect))
+Declaration(Class(:ElderDragon))
+Declaration(Class(:EnemyModifier))
+Declaration(Class(:Entangle))
+Declaration(Class(:Entity_Manipulation))
+Declaration(Class(:EpicMonster))
+Declaration(Class(:Fear))
+Declaration(Class(:Ferocity))
+Declaration(Class(:Fighter))
+Declaration(Class(:Flee))
+Declaration(Class(:ForcedAction))
+Declaration(Class(:GlobalAbility))
+Declaration(Class(:Glyph))
+Declaration(Class(:Gromp))
+Declaration(Class(:Ground))
+Declaration(Class(:HeavyControl))
+Declaration(Class(:Hybird))
+Declaration(Class(:InfernalDragon))
+Declaration(Class(:Inhibitor))
+Declaration(Class(:InhibitorTurret))
+Declaration(Class(:InnerTurret))
+Declaration(Class(:Item))
+Declaration(Class(:JungleMonster))
+Declaration(Class(:KnockAside))
+Declaration(Class(:KnockBack))
+Declaration(Class(:KnockUp))
+Declaration(Class(:Krugs))
+Declaration(Class(:Mage))
+Declaration(Class(:Mark))
+Declaration(Class(:Marksman))
+Declaration(Class(:Mastery))
+Declaration(Class(:Melee))
+Declaration(Class(:MeleeAbility))
+Declaration(Class(:MeleeAuto))
+Declaration(Class(:MeleeMinion))
+Declaration(Class(:Minion))
+Declaration(Class(:MobilityAbility))
+Declaration(Class(:Modifiers))
+Declaration(Class(:Monster))
+Declaration(Class(:MountainDragon))
+Declaration(Class(:Nearsight))
+Declaration(Class(:Nexus))
+Declaration(Class(:NexusTurrets))
+Declaration(Class(:NuetralCharacters))
+Declaration(Class(:OceanDragon))
+Declaration(Class(:OuterTurret))
+Declaration(Class(:PassiveAbility))
+Declaration(Class(:Polymorph))
+Declaration(Class(:PrimaryMonster))
+Declaration(Class(:Pull))
+Declaration(Class(:Quintessences))
+Declaration(Class(:Ranged))
+Declaration(Class(:RangedAbility))
+Declaration(Class(:RangedAuto))
+Declaration(Class(:Raptors))
+Declaration(Class(:RedBrambleback))
+Declaration(Class(:Resolve))
+Declaration(Class(:RiftHerald))
+Declaration(Class(:RiftScuttler))
+Declaration(Class(:Root))
+Declaration(Class(:Rune))
+Declaration(Class(:RuneEffect))
+Declaration(Class(:ScaleType))
+Declaration(Class(:Seal))
+Declaration(Class(:SecondaryMonster))
+Declaration(Class(:SelfModifier))
+Declaration(Class(:SiegeMinion))
+Declaration(Class(:Silence))
+Declaration(Class(:Slow))
+Declaration(Class(:Stasis))
+Declaration(Class(:StatModiyingAbility))
+Declaration(Class(:Structure))
+Declaration(Class(:Stun))
+Declaration(Class(:SuperMinion))
+Declaration(Class(:Support))
+Declaration(Class(:Suppression))
+Declaration(Class(:Suspension))
+Declaration(Class(:Tank))
+Declaration(Class(:TargetedAbility))
+Declaration(Class(:Taunt))
+Declaration(Class(:Team))
+Declaration(Class(:TeamCharacters))
+Declaration(Class(:TeamModifier))
+Declaration(Class(:Tier))
+Declaration(Class(:Tier1))
+Declaration(Class(:Tier2))
+Declaration(Class(:Tier3))
+Declaration(Class(:Turret))
+Declaration(Class(:UntargetedAbility))
+Declaration(Class(:Wolves))
+Declaration(ObjectProperty(:counters))
+Declaration(ObjectProperty(:doesModify))
+Declaration(ObjectProperty(:hasAbility))
+Declaration(ObjectProperty(:hasAbility1))
+Declaration(ObjectProperty(:hasAbility1_Modify))
+Declaration(ObjectProperty(:hasAbility2))
+Declaration(ObjectProperty(:hasAbility2_Modify))
+Declaration(ObjectProperty(:hasAbility3))
+Declaration(ObjectProperty(:hasAbility3_Modify))
+Declaration(ObjectProperty(:hasAbilityPassive))
+Declaration(ObjectProperty(:hasAbilityUltimate))
+Declaration(ObjectProperty(:hasAbilityUltimate_Modify))
+Declaration(ObjectProperty(:hasAutoAttack))
+Declaration(ObjectProperty(:hasItem))
+Declaration(ObjectProperty(:hasTeam))
+Declaration(ObjectProperty(:isAbilityOf))
+Declaration(DataProperty(:Ability_Power))
+Declaration(DataProperty(:Attack_Power))
+Declaration(DataProperty(:Defense_Power))
+Declaration(DataProperty(:Difficulty))
+Declaration(DataProperty(:hasChampionProperties))
+Declaration(DataProperty(:hasRange))
+Declaration(DataProperty(:hasStats))
+Declaration(NamedIndividual(:Arcane_Mastery))
+Declaration(NamedIndividual(:Aria_of_Perseverance))
+Declaration(NamedIndividual(:Ashe))
+Declaration(NamedIndividual(:BlueTeam))
+Declaration(NamedIndividual(:Braum))
+Declaration(NamedIndividual(:Burnout))
+Declaration(NamedIndividual(:Burnout_Dragon_Form))
+Declaration(NamedIndividual(:Concussive_Blows))
+Declaration(NamedIndividual(:Courage))
+Declaration(NamedIndividual(:Crescendo))
+Declaration(NamedIndividual(:Crushing_Blow))
+Declaration(NamedIndividual(:Cyclone))
+Declaration(NamedIndividual(:Decisive_Strike))
+Declaration(NamedIndividual(:Decoy))
+Declaration(NamedIndividual(:Demacian_Justice))
+Declaration(NamedIndividual(:Dragonborn))
+Declaration(NamedIndividual(:Enchanted_Crystal_Arrow))
+Declaration(NamedIndividual(:Final_Spark))
+Declaration(NamedIndividual(:Flame_Breath))
+Declaration(NamedIndividual(:Flame_Breath_Dragon_Form))
+Declaration(NamedIndividual(:Frost_Shot))
+Declaration(NamedIndividual(:Frozen_Tomb))
+Declaration(NamedIndividual(:Garen))
+Declaration(NamedIndividual(:Glacial_Fissure))
+Declaration(NamedIndividual(:Glacial_Path))
+Declaration(NamedIndividual(:Hawkshot))
+Declaration(NamedIndividual(:Hymn_of_Valor))
+Declaration(NamedIndividual(:Ice_Shard))
+Declaration(NamedIndividual(:Iceborn))
+Declaration(NamedIndividual(:Illumination))
+Declaration(NamedIndividual(:Jinx))
+Declaration(NamedIndividual(:Judgment))
+Declaration(NamedIndividual(:Leap))
+Declaration(NamedIndividual(:Leap_Evolved))
+Declaration(NamedIndividual(:Light_Binding))
+Declaration(NamedIndividual(:Lissandra))
+Declaration(NamedIndividual(:Lucent_Singularity))
+Declaration(NamedIndividual(:Lux))
+Declaration(NamedIndividual(:MeleeImmediateProximity))
+Declaration(NamedIndividual(:MeleeMediumProximity))
+Declaration(NamedIndividual(:Nimbus_Strike))
+Declaration(NamedIndividual(:Overload))
+Declaration(NamedIndividual(:Perseverance))
+Declaration(NamedIndividual(:Power_Chord))
+Declaration(NamedIndividual(:Prismatic_Barrier))
+Declaration(NamedIndividual(:Realm_Warp))
+Declaration(NamedIndividual(:RedTeam))
+Declaration(NamedIndividual(:Ring_of_Frost))
+Declaration(NamedIndividual(:Rune_Prison))
+Declaration(NamedIndividual(:Ryze))
+Declaration(NamedIndividual(:Shyvana))
+Declaration(NamedIndividual(:Sona))
+Declaration(NamedIndividual(:Song_of_Celerity))
+Declaration(NamedIndividual(:Spell_Flux))
+Declaration(NamedIndividual(:Stand_Behind_Me))
+Declaration(NamedIndividual(:Stone_Skin))
+Declaration(NamedIndividual(:Taste_Their_Fear))
+Declaration(NamedIndividual(:Taste_Their_Fear_Evolved))
+Declaration(NamedIndividual(:Twin_Bite))
+Declaration(NamedIndividual(:Twin_Bite_Dragon_Form))
+Declaration(NamedIndividual(:Unbreakable))
+Declaration(NamedIndividual(:Unseen_Threat))
+Declaration(NamedIndividual(:Void_Assault))
+Declaration(NamedIndividual(:Void_Assault_Evolved))
+Declaration(NamedIndividual(:Void_Spike))
+Declaration(NamedIndividual(:Void_Spike_Evolved))
+Declaration(NamedIndividual(:Volley))
+Declaration(NamedIndividual(:Wukong))
+Declaration(NamedIndividual(:Dragon's_Descent))
+Declaration(NamedIndividual(:Flame_Chompers!))
+Declaration(NamedIndividual(:Get_Excited!))
+Declaration(NamedIndividual(:Kha'zix))
+Declaration(NamedIndividual(:Ranger's_Focus))
+Declaration(NamedIndividual(:Super_Mega_Death_Rocket!))
+Declaration(NamedIndividual(:Switcheroo!))
+Declaration(NamedIndividual(:Winter's_Bite))
+Declaration(NamedIndividual(:Zap!))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :counters (:counters)
+
+ObjectPropertyDomain(:counters :Champion)
+ObjectPropertyRange(:counters :Champion)
+
+# Object Property: :doesModify (:doesModify)
+
+ObjectPropertyDomain(:doesModify :Entity_Manipulation)
+ObjectPropertyRange(:doesModify :Characters)
+
+# Object Property: :hasAbility (:hasAbility)
+
+SubObjectPropertyOf(:hasAbility owl:topObjectProperty)
+InverseObjectProperties(:hasAbility :isAbilityOf)
+ObjectPropertyRange(:hasAbility :Ability)
+
+# Object Property: :hasAbility1 (:hasAbility1)
+
+SubObjectPropertyOf(:hasAbility1 :hasAbility)
+
+# Object Property: :hasAbility1_Modify (:hasAbility1_Modify)
+
+SubObjectPropertyOf(:hasAbility1_Modify :hasAbility1)
+
+# Object Property: :hasAbility2 (:hasAbility2)
+
+SubObjectPropertyOf(:hasAbility2 :hasAbility)
+
+# Object Property: :hasAbility2_Modify (:hasAbility2_Modify)
+
+SubObjectPropertyOf(:hasAbility2_Modify :hasAbility2)
+
+# Object Property: :hasAbility3 (:hasAbility3)
+
+SubObjectPropertyOf(:hasAbility3 :hasAbility)
+
+# Object Property: :hasAbility3_Modify (:hasAbility3_Modify)
+
+SubObjectPropertyOf(:hasAbility3_Modify :hasAbility3)
+
+# Object Property: :hasAbilityPassive (:hasAbilityPassive)
+
+SubObjectPropertyOf(:hasAbilityPassive :hasAbility)
+
+# Object Property: :hasAbilityUltimate (:hasAbilityUltimate)
+
+SubObjectPropertyOf(:hasAbilityUltimate :hasAbility)
+
+# Object Property: :hasAbilityUltimate_Modify (:hasAbilityUltimate_Modify)
+
+SubObjectPropertyOf(:hasAbilityUltimate_Modify :hasAbilityUltimate)
+
+# Object Property: :hasAutoAttack (:hasAutoAttack)
+
+TransitiveObjectProperty(:hasAutoAttack)
+ObjectPropertyRange(:hasAutoAttack :AutoAttack)
+
+# Object Property: :hasItem (:hasItem)
+
+ObjectPropertyRange(:hasItem :Item)
+
+# Object Property: :hasTeam (:hasTeam)
+
+ObjectPropertyDomain(:hasTeam :Characters)
+ObjectPropertyRange(:hasTeam :Team)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :Ability_Power (:Ability_Power)
+
+SubDataPropertyOf(:Ability_Power :hasStats)
+FunctionalDataProperty(:Ability_Power)
+DataPropertyDomain(:Ability_Power :Champion)
+DataPropertyRange(:Ability_Power xsd:integer)
+DataPropertyRange(:Ability_Power DatatypeRestriction(xsd:integer xsd:minExclusive "0"^^xsd:integer))
+DataPropertyRange(:Ability_Power DatatypeRestriction(xsd:integer xsd:maxInclusive "10"^^xsd:integer))
+
+# Data Property: :Attack_Power (:Attack_Power)
+
+SubDataPropertyOf(:Attack_Power :hasStats)
+FunctionalDataProperty(:Attack_Power)
+DataPropertyDomain(:Attack_Power :Champion)
+DataPropertyRange(:Attack_Power xsd:integer)
+DataPropertyRange(:Attack_Power DatatypeRestriction(xsd:integer xsd:minExclusive "0"^^xsd:integer))
+DataPropertyRange(:Attack_Power DatatypeRestriction(xsd:integer xsd:maxInclusive "10"^^xsd:integer))
+
+# Data Property: :Defense_Power (:Defense_Power)
+
+SubDataPropertyOf(:Defense_Power :hasStats)
+FunctionalDataProperty(:Defense_Power)
+DataPropertyDomain(:Defense_Power :Champion)
+DataPropertyRange(:Defense_Power xsd:integer)
+DataPropertyRange(:Defense_Power DatatypeRestriction(xsd:integer xsd:minExclusive "0"^^xsd:integer))
+DataPropertyRange(:Defense_Power DatatypeRestriction(xsd:integer xsd:maxInclusive "10"^^xsd:integer))
+
+# Data Property: :Difficulty (:Difficulty)
+
+SubDataPropertyOf(:Difficulty :hasStats)
+FunctionalDataProperty(:Difficulty)
+DataPropertyDomain(:Difficulty :Champion)
+DataPropertyRange(:Difficulty xsd:integer)
+DataPropertyRange(:Difficulty DatatypeRestriction(xsd:integer xsd:minExclusive "0"^^xsd:integer))
+DataPropertyRange(:Difficulty DatatypeRestriction(xsd:integer xsd:maxInclusive "10"^^xsd:integer))
+
+# Data Property: :hasChampionProperties (:hasChampionProperties)
+
+SubDataPropertyOf(:hasChampionProperties owl:topDataProperty)
+
+# Data Property: :hasRange (:hasRange)
+
+SubDataPropertyOf(:hasRange owl:topDataProperty)
+FunctionalDataProperty(:hasRange)
+DataPropertyDomain(:hasRange :Action)
+DataPropertyRange(:hasRange xsd:int)
+
+# Data Property: :hasStats (:hasStats)
+
+SubDataPropertyOf(:hasStats :hasChampionProperties)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :Ability (:Ability)
+
+SubClassOf(:Ability :Action)
+
+# Class: :Ability_Power_Scaling (:Ability_Power_Scaling)
+
+EquivalentClasses(:Ability_Power_Scaling ObjectIntersectionOf(:Champion DataSomeValuesFrom(:Ability_Power DatatypeRestriction(xsd:int xsd:minExclusive "5"^^xsd:int))))
+SubClassOf(:Ability_Power_Scaling :Champion)
+
+# Class: :Action (:Action)
+
+SubClassOf(:Action :Entity_Manipulation)
+
+# Class: :Airborn (:Airborn)
+
+SubClassOf(:Airborn :ControlAbility)
+
+# Class: :Assassin (:Assassin)
+
+SubClassOf(:Assassin :Champion)
+
+# Class: :Attack_Damage_Scaling (:Attack_Damage_Scaling)
+
+EquivalentClasses(:Attack_Damage_Scaling ObjectIntersectionOf(:Champion DataSomeValuesFrom(:Attack_Power DatatypeRestriction(xsd:int xsd:minExclusive "5"^^xsd:int))))
+SubClassOf(:Attack_Damage_Scaling :Champion)
+
+# Class: :Aura (:Aura)
+
+SubClassOf(:Aura :UntargetedAbility)
+
+# Class: :AutoAttack (:AutoAttack)
+
+SubClassOf(:AutoAttack :Action)
+
+# Class: :BaronNashor (:BaronNashor)
+
+SubClassOf(:BaronNashor :EpicMonster)
+
+# Class: :Blind (:Blind)
+
+SubClassOf(:Blind :ControlAbility)
+
+# Class: :BlueSentinel (:BlueSentinel)
+
+SubClassOf(:BlueSentinel :PrimaryMonster)
+
+# Class: :Buff (:Buff)
+
+SubClassOf(:Buff :Effect)
+
+# Class: :CasterMinion (:CasterMinion)
+
+SubClassOf(:CasterMinion :Minion)
+
+# Class: :Champion (:Champion)
+
+EquivalentClasses(:Champion ObjectMaxCardinality(6 :hasItem :Item))
+SubClassOf(:Champion :TeamCharacters)
+DisjointClasses(:Champion :Minion)
+
+# Class: :Characters (:Characters)
+
+SubClassOf(:Characters ObjectSomeValuesFrom(:hasAutoAttack :AutoAttack))
+
+# Class: :Charm (:Charm)
+
+SubClassOf(:Charm :ForcedAction)
+
+# Class: :CloudDragon (:CloudDragon)
+
+SubClassOf(:CloudDragon :Dragon)
+
+# Class: :Control (:Control)
+
+EquivalentClasses(:Control ObjectIntersectionOf(:Champion ObjectUnionOf(ObjectIntersectionOf(ObjectMinCardinality(1 :hasAbility :HeavyControl) ObjectMinCardinality(2 :hasAbility :ControlAbility)) ObjectMinCardinality(3 :hasAbility :ControlAbility))))
+SubClassOf(:Control :Champion)
+
+# Class: :ControlAbility (:ControlAbility)
+
+AnnotationAssertion(rdfs:isDefinedBy :ControlAbility "Control abilities (CC) are grouped into one of two categories depending on whether or not the effect removes total control of the player's character. 
+
+Heavy Control (Heavy CC) completely removes all control of a character, while other control abilities partially remove the player's control of a character.")
+SubClassOf(:ControlAbility :Ability)
+
+# Class: :CrowdControl (:CrowdControl)
+
+SubClassOf(:CrowdControl :Effect)
+
+# Class: :Cunning (:Cunning)
+
+SubClassOf(:Cunning :Mastery)
+
+# Class: :Disarm (:Disarm)
+
+SubClassOf(:Disarm :ControlAbility)
+
+# Class: :Dragon (:Dragon)
+
+EquivalentClasses(:Dragon ObjectIntersectionOf(ObjectComplementOf(ObjectSomeValuesFrom(:hasAutoAttack :MeleeAuto)) ObjectSomeValuesFrom(:hasAutoAttack :RangedAuto)))
+SubClassOf(:Dragon :EpicMonster)
+
+# Class: :Effect (:Effect)
+
+SubClassOf(:Effect :Action)
+
+# Class: :ElderDragon (:ElderDragon)
+
+SubClassOf(:ElderDragon :Dragon)
+
+# Class: :EnemyModifier (:EnemyModifier)
+
+SubClassOf(:EnemyModifier :StatModiyingAbility)
+
+# Class: :Entangle (:Entangle)
+
+SubClassOf(:Entangle :Disarm)
+SubClassOf(:Entangle :Root)
+
+# Class: :Entity_Manipulation (:Entity_Manipulation)
+
+EquivalentClasses(:Entity_Manipulation ObjectSomeValuesFrom(:doesModify :Characters))
+
+# Class: :EpicMonster (:EpicMonster)
+
+SubClassOf(:EpicMonster :Monster)
+
+# Class: :Fear (:Fear)
+
+SubClassOf(:Fear :ForcedAction)
+
+# Class: :Ferocity (:Ferocity)
+
+SubClassOf(:Ferocity :Mastery)
+
+# Class: :Fighter (:Fighter)
+
+SubClassOf(:Fighter :Champion)
+
+# Class: :Flee (:Flee)
+
+SubClassOf(:Flee :ForcedAction)
+
+# Class: :ForcedAction (:ForcedAction)
+
+SubClassOf(:ForcedAction :ControlAbility)
+
+# Class: :GlobalAbility (:GlobalAbility)
+
+AnnotationAssertion(rdfs:isDefinedBy :GlobalAbility "Heavy Control (Heavy CC) completely removes all control of a character, while other abilities may partially remove the player's control of a character.")
+EquivalentClasses(:GlobalAbility ObjectIntersectionOf(:Ability DataSomeValuesFrom(:hasRange DatatypeRestriction(xsd:int xsd:minInclusive "999999"^^xsd:int))))
+SubClassOf(:GlobalAbility :Ability)
+
+# Class: :Glyph (:Glyph)
+
+SubClassOf(:Glyph :Rune)
+
+# Class: :Gromp (:Gromp)
+
+SubClassOf(:Gromp :SecondaryMonster)
+
+# Class: :Ground (:Ground)
+
+SubClassOf(:Ground :ControlAbility)
+
+# Class: :HeavyControl (:HeavyControl)
+
+AnnotationAssertion(rdfs:isDefinedBy :HeavyControl "Heavy Control (Heavy CC) completely removes all control of a character, while other abilities may partially remove the player's control of a character.")
+EquivalentClasses(:HeavyControl ObjectUnionOf(:Airborn :ForcedAction :Stasis :Stun :Suppression :Suspension))
+SubClassOf(:HeavyControl :ControlAbility)
+
+# Class: :Hybird (:Hybird)
+
+EquivalentClasses(:Hybird ObjectIntersectionOf(:Ability_Power_Scaling :Attack_Damage_Scaling :Champion))
+SubClassOf(:Hybird :Champion)
+
+# Class: :InfernalDragon (:InfernalDragon)
+
+SubClassOf(:InfernalDragon :Dragon)
+
+# Class: :Inhibitor (:Inhibitor)
+
+SubClassOf(:Inhibitor :Structure)
+
+# Class: :InhibitorTurret (:InhibitorTurret)
+
+SubClassOf(:InhibitorTurret :Turret)
+
+# Class: :InnerTurret (:InnerTurret)
+
+SubClassOf(:InnerTurret :Turret)
+
+# Class: :Item (:Item)
+
+SubClassOf(:Item :Modifiers)
+
+# Class: :JungleMonster (:JungleMonster)
+
+SubClassOf(:JungleMonster :Monster)
+
+# Class: :KnockAside (:KnockAside)
+
+SubClassOf(:KnockAside :Airborn)
+
+# Class: :KnockBack (:KnockBack)
+
+SubClassOf(:KnockBack :Airborn)
+
+# Class: :KnockUp (:KnockUp)
+
+SubClassOf(:KnockUp :Airborn)
+
+# Class: :Krugs (:Krugs)
+
+SubClassOf(:Krugs :SecondaryMonster)
+
+# Class: :Mage (:Mage)
+
+SubClassOf(:Mage :Champion)
+
+# Class: :Mark (:Mark)
+
+SubClassOf(:Mark :Rune)
+
+# Class: :Marksman (:Marksman)
+
+SubClassOf(:Marksman :Champion)
+
+# Class: :Mastery (:Mastery)
+
+SubClassOf(:Mastery :Modifiers)
+
+# Class: :Melee (:Melee)
+
+EquivalentClasses(:Melee ObjectIntersectionOf(:Champion ObjectSomeValuesFrom(:hasAutoAttack :MeleeAuto)))
+SubClassOf(:Melee :Champion)
+
+# Class: :MeleeAbility (:MeleeAbility)
+
+SubClassOf(:MeleeAbility :Ability)
+
+# Class: :MeleeAuto (:MeleeAuto)
+
+SubClassOf(:MeleeAuto :AutoAttack)
+
+# Class: :MeleeMinion (:MeleeMinion)
+
+SubClassOf(:MeleeMinion :Minion)
+
+# Class: :Minion (:Minion)
+
+SubClassOf(:Minion :TeamCharacters)
+
+# Class: :MobilityAbility (:MobilityAbility)
+
+SubClassOf(:MobilityAbility :Ability)
+
+# Class: :Modifiers (:Modifiers)
+
+SubClassOf(:Modifiers :Entity_Manipulation)
+
+# Class: :Monster (:Monster)
+
+SubClassOf(:Monster :NuetralCharacters)
+
+# Class: :MountainDragon (:MountainDragon)
+
+SubClassOf(:MountainDragon :Dragon)
+
+# Class: :Nearsight (:Nearsight)
+
+SubClassOf(:Nearsight :ControlAbility)
+
+# Class: :Nexus (:Nexus)
+
+SubClassOf(:Nexus :Structure)
+
+# Class: :NexusTurrets (:NexusTurrets)
+
+SubClassOf(:NexusTurrets :Turret)
+
+# Class: :NuetralCharacters (:NuetralCharacters)
+
+EquivalentClasses(:NuetralCharacters ObjectIntersectionOf(:NuetralCharacters ObjectComplementOf(ObjectSomeValuesFrom(:hasTeam :Team))))
+SubClassOf(:NuetralCharacters :Characters)
+
+# Class: :OceanDragon (:OceanDragon)
+
+SubClassOf(:OceanDragon :Dragon)
+
+# Class: :OuterTurret (:OuterTurret)
+
+SubClassOf(:OuterTurret :Turret)
+
+# Class: :PassiveAbility (:PassiveAbility)
+
+SubClassOf(:PassiveAbility :Ability)
+
+# Class: :Polymorph (:Polymorph)
+
+SubClassOf(:Polymorph :Disarm)
+SubClassOf(:Polymorph :Silence)
+
+# Class: :PrimaryMonster (:PrimaryMonster)
+
+SubClassOf(:PrimaryMonster :JungleMonster)
+
+# Class: :Pull (:Pull)
+
+SubClassOf(:Pull :Airborn)
+
+# Class: :Quintessences (:Quintessences)
+
+SubClassOf(:Quintessences :Rune)
+
+# Class: :Ranged (:Ranged)
+
+EquivalentClasses(:Ranged ObjectIntersectionOf(:Champion ObjectSomeValuesFrom(:hasAutoAttack :RangedAuto)))
+SubClassOf(:Ranged :Champion)
+
+# Class: :RangedAbility (:RangedAbility)
+
+SubClassOf(:RangedAbility :Ability)
+
+# Class: :RangedAuto (:RangedAuto)
+
+SubClassOf(:RangedAuto :AutoAttack)
+
+# Class: :Raptors (:Raptors)
+
+SubClassOf(:Raptors :SecondaryMonster)
+
+# Class: :RedBrambleback (:RedBrambleback)
+
+SubClassOf(:RedBrambleback :PrimaryMonster)
+
+# Class: :Resolve (:Resolve)
+
+SubClassOf(:Resolve :Mastery)
+
+# Class: :RiftHerald (:RiftHerald)
+
+EquivalentClasses(:RiftHerald ObjectIntersectionOf(ObjectComplementOf(ObjectSomeValuesFrom(:hasAutoAttack :RangedAuto)) ObjectSomeValuesFrom(:hasAutoAttack :MeleeAuto)))
+SubClassOf(:RiftHerald :EpicMonster)
+
+# Class: :RiftScuttler (:RiftScuttler)
+
+SubClassOf(:RiftScuttler :JungleMonster)
+
+# Class: :Root (:Root)
+
+SubClassOf(:Root :ControlAbility)
+
+# Class: :Rune (:Rune)
+
+SubClassOf(:Rune :Modifiers)
+
+# Class: :RuneEffect (:RuneEffect)
+
+SubClassOf(:RuneEffect :Rune)
+
+# Class: :ScaleType (:ScaleType)
+
+SubClassOf(:ScaleType :Rune)
+
+# Class: :Seal (:Seal)
+
+SubClassOf(:Seal :Rune)
+
+# Class: :SecondaryMonster (:SecondaryMonster)
+
+SubClassOf(:SecondaryMonster :JungleMonster)
+
+# Class: :SelfModifier (:SelfModifier)
+
+SubClassOf(:SelfModifier :StatModiyingAbility)
+
+# Class: :SiegeMinion (:SiegeMinion)
+
+SubClassOf(:SiegeMinion :Minion)
+
+# Class: :Silence (:Silence)
+
+SubClassOf(:Silence :ControlAbility)
+
+# Class: :Slow (:Slow)
+
+SubClassOf(:Slow :ControlAbility)
+
+# Class: :Stasis (:Stasis)
+
+SubClassOf(:Stasis :ControlAbility)
+
+# Class: :StatModiyingAbility (:StatModiyingAbility)
+
+SubClassOf(:StatModiyingAbility :Ability)
+
+# Class: :Structure (:Structure)
+
+SubClassOf(:Structure :TeamCharacters)
+
+# Class: :Stun (:Stun)
+
+SubClassOf(:Stun :ControlAbility)
+
+# Class: :SuperMinion (:SuperMinion)
+
+SubClassOf(:SuperMinion :Minion)
+
+# Class: :Support (:Support)
+
+SubClassOf(:Support :Champion)
+
+# Class: :Suppression (:Suppression)
+
+SubClassOf(:Suppression :ControlAbility)
+
+# Class: :Suspension (:Suspension)
+
+SubClassOf(:Suspension :Airborn)
+SubClassOf(:Suspension :Stun)
+
+# Class: :Tank (:Tank)
+
+EquivalentClasses(:Tank ObjectIntersectionOf(:Champion DataSomeValuesFrom(:Defense_Power DatatypeRestriction(xsd:int xsd:minInclusive "5"^^xsd:int))))
+SubClassOf(:Tank :Champion)
+
+# Class: :TargetedAbility (:TargetedAbility)
+
+SubClassOf(:TargetedAbility :RangedAbility)
+
+# Class: :Taunt (:Taunt)
+
+SubClassOf(:Taunt :ForcedAction)
+
+# Class: :TeamCharacters (:TeamCharacters)
+
+EquivalentClasses(:TeamCharacters ObjectIntersectionOf(:TeamCharacters ObjectExactCardinality(1 :hasTeam :Team)))
+SubClassOf(:TeamCharacters :Characters)
+
+# Class: :TeamModifier (:TeamModifier)
+
+SubClassOf(:TeamModifier :StatModiyingAbility)
+
+# Class: :Tier (:Tier)
+
+SubClassOf(:Tier :Rune)
+
+# Class: :Tier1 (:Tier1)
+
+SubClassOf(:Tier1 :Tier)
+
+# Class: :Tier2 (:Tier2)
+
+SubClassOf(:Tier2 :Tier)
+
+# Class: :Tier3 (:Tier3)
+
+SubClassOf(:Tier3 :Tier)
+
+# Class: :Turret (:Turret)
+
+SubClassOf(:Turret :Structure)
+
+# Class: :UntargetedAbility (:UntargetedAbility)
+
+SubClassOf(:UntargetedAbility :RangedAbility)
+
+# Class: :Wolves (:Wolves)
+
+SubClassOf(:Wolves :SecondaryMonster)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :Arcane_Mastery (:Arcane_Mastery)
+
+ClassAssertion(:PassiveAbility :Arcane_Mastery)
+ClassAssertion(:SelfModifier :Arcane_Mastery)
+
+# Individual: :Aria_of_Perseverance (:Aria_of_Perseverance)
+
+ClassAssertion(:Aura :Aria_of_Perseverance)
+ClassAssertion(:EnemyModifier :Aria_of_Perseverance)
+ClassAssertion(:SelfModifier :Aria_of_Perseverance)
+ClassAssertion(:TeamModifier :Aria_of_Perseverance)
+DataPropertyAssertion(:hasRange :Aria_of_Perseverance "1000"^^xsd:integer)
+
+# Individual: :Ashe (:Ashe)
+
+ClassAssertion(:Marksman :Ashe)
+ObjectPropertyAssertion(:hasAbility1 :Ashe :Ranger's_Focus)
+ObjectPropertyAssertion(:hasAbility2 :Ashe :Volley)
+ObjectPropertyAssertion(:hasAbility3 :Ashe :Hawkshot)
+ObjectPropertyAssertion(:hasAbilityPassive :Ashe :Frost_Shot)
+ObjectPropertyAssertion(:hasAbilityUltimate :Ashe :Enchanted_Crystal_Arrow)
+DataPropertyAssertion(:Ability_Power :Ashe "2"^^xsd:integer)
+DataPropertyAssertion(:Attack_Power :Ashe "7"^^xsd:integer)
+DataPropertyAssertion(:Defense_Power :Ashe "3"^^xsd:integer)
+DataPropertyAssertion(:Difficulty :Ashe "4"^^xsd:integer)
+
+# Individual: :BlueTeam (:BlueTeam)
+
+ClassAssertion(:Team :BlueTeam)
+
+# Individual: :Braum (:Braum)
+
+ClassAssertion(:Support :Braum)
+ObjectPropertyAssertion(:hasAbility1 :Braum :Winter's_Bite)
+ObjectPropertyAssertion(:hasAbility2 :Braum :Stand_Behind_Me)
+ObjectPropertyAssertion(:hasAbility3 :Braum :Unbreakable)
+ObjectPropertyAssertion(:hasAbilityPassive :Braum :Concussive_Blows)
+ObjectPropertyAssertion(:hasAbilityUltimate :Braum :Glacial_Fissure)
+DataPropertyAssertion(:Ability_Power :Braum "4"^^xsd:integer)
+DataPropertyAssertion(:Attack_Power :Braum "3"^^xsd:integer)
+DataPropertyAssertion(:Defense_Power :Braum "9"^^xsd:integer)
+DataPropertyAssertion(:Difficulty :Braum "3"^^xsd:integer)
+
+# Individual: :Burnout (:Burnout)
+
+ClassAssertion(:Aura :Burnout)
+ClassAssertion(:SelfModifier :Burnout)
+DataPropertyAssertion(:hasRange :Burnout "163"^^xsd:integer)
+
+# Individual: :Burnout_Dragon_Form (:Burnout_Dragon_Form)
+
+ClassAssertion(:Aura :Burnout_Dragon_Form)
+ClassAssertion(:EnemyModifier :Burnout_Dragon_Form)
+ClassAssertion(:SelfModifier :Burnout_Dragon_Form)
+DataPropertyAssertion(:hasRange :Burnout_Dragon_Form "163"^^xsd:integer)
+
+# Individual: :Concussive_Blows (:Concussive_Blows)
+
+ClassAssertion(:PassiveAbility :Concussive_Blows)
+ClassAssertion(:Stun :Concussive_Blows)
+DataPropertyAssertion(:hasRange :Concussive_Blows "0"^^xsd:integer)
+
+# Individual: :Courage (:Courage)
+
+ClassAssertion(:PassiveAbility :Courage)
+ClassAssertion(:SelfModifier :Courage)
+ObjectPropertyAssertion(:isAbilityOf :Courage :Garen)
+
+# Individual: :Crescendo (:Crescendo)
+
+ClassAssertion(:Stun :Crescendo)
+ClassAssertion(:UntargetedAbility :Crescendo)
+DataPropertyAssertion(:hasRange :Crescendo "900"^^xsd:integer)
+
+# Individual: :Crushing_Blow (:Crushing_Blow)
+
+ClassAssertion(:EnemyModifier :Crushing_Blow)
+ClassAssertion(:MeleeAbility :Crushing_Blow)
+DataPropertyAssertion(:hasRange :Crushing_Blow "300"^^xsd:integer)
+
+# Individual: :Cyclone (:Cyclone)
+
+ClassAssertion(:Aura :Cyclone)
+ClassAssertion(:KnockUp :Cyclone)
+DataPropertyAssertion(:hasRange :Cyclone "63"^^xsd:integer)
+
+# Individual: :Decisive_Strike (:Decisive_Strike)
+
+ClassAssertion(:MeleeAbility :Decisive_Strike)
+ClassAssertion(:SelfModifier :Decisive_Strike)
+ClassAssertion(:Silence :Decisive_Strike)
+ObjectPropertyAssertion(:isAbilityOf :Decisive_Strike :Garen)
+DataPropertyAssertion(:hasRange :Decisive_Strike "0"^^xsd:integer)
+
+# Individual: :Decoy (:Decoy)
+
+ClassAssertion(:Aura :Decoy)
+ClassAssertion(:SelfModifier :Decoy)
+DataPropertyAssertion(:hasRange :Decoy "175"^^xsd:integer)
+
+# Individual: :Demacian_Justice (:Demacian_Justice)
+
+ClassAssertion(:MeleeAbility :Demacian_Justice)
+ObjectPropertyAssertion(:isAbilityOf :Demacian_Justice :Garen)
+DataPropertyAssertion(:hasRange :Demacian_Justice "400"^^xsd:integer)
+
+# Individual: :Dragonborn (:Dragonborn)
+
+ClassAssertion(:PassiveAbility :Dragonborn)
+ClassAssertion(:SelfModifier :Dragonborn)
+
+# Individual: :Enchanted_Crystal_Arrow (:Enchanted_Crystal_Arrow)
+
+ClassAssertion(:RangedAbility :Enchanted_Crystal_Arrow)
+ClassAssertion(:Slow :Enchanted_Crystal_Arrow)
+ClassAssertion(:Stun :Enchanted_Crystal_Arrow)
+DataPropertyAssertion(:hasRange :Enchanted_Crystal_Arrow "999999"^^xsd:integer)
+
+# Individual: :Final_Spark (:Final_Spark)
+
+ClassAssertion(:UntargetedAbility :Final_Spark)
+DataPropertyAssertion(:hasRange :Final_Spark "3340"^^xsd:integer)
+
+# Individual: :Flame_Breath (:Flame_Breath)
+
+ClassAssertion(:EnemyModifier :Flame_Breath)
+ClassAssertion(:UntargetedAbility :Flame_Breath)
+DataPropertyAssertion(:hasRange :Flame_Breath "925"^^xsd:integer)
+
+# Individual: :Flame_Breath_Dragon_Form (:Flame_Breath_Dragon_Form)
+
+ClassAssertion(:EnemyModifier :Flame_Breath_Dragon_Form)
+ClassAssertion(:UntargetedAbility :Flame_Breath_Dragon_Form)
+DataPropertyAssertion(:hasRange :Flame_Breath_Dragon_Form "925"^^xsd:integer)
+
+# Individual: :Frost_Shot (:Frost_Shot)
+
+ClassAssertion(:PassiveAbility :Frost_Shot)
+ClassAssertion(:Slow :Frost_Shot)
+DataPropertyAssertion(:hasRange :Frost_Shot "0"^^xsd:integer)
+
+# Individual: :Frozen_Tomb (:Frozen_Tomb)
+
+ClassAssertion(:SelfModifier :Frozen_Tomb)
+ClassAssertion(:Slow :Frozen_Tomb)
+ClassAssertion(:Stasis :Frozen_Tomb)
+ClassAssertion(:Stun :Frozen_Tomb)
+ClassAssertion(:TargetedAbility :Frozen_Tomb)
+DataPropertyAssertion(:hasRange :Frozen_Tomb "550"^^xsd:integer)
+
+# Individual: :Garen (:Garen)
+
+ClassAssertion(:Fighter :Garen)
+ObjectPropertyAssertion(:hasAbility1 :Garen :Decisive_Strike)
+ObjectPropertyAssertion(:hasAbility2 :Garen :Courage)
+ObjectPropertyAssertion(:hasAbility3 :Garen :Judgment)
+ObjectPropertyAssertion(:hasAbilityPassive :Garen :Perseverance)
+ObjectPropertyAssertion(:hasAbilityUltimate :Garen :Demacian_Justice)
+DataPropertyAssertion(:Ability_Power :Garen "1"^^xsd:integer)
+DataPropertyAssertion(:Attack_Power :Garen "7"^^xsd:integer)
+DataPropertyAssertion(:Defense_Power :Garen "7"^^xsd:integer)
+DataPropertyAssertion(:Difficulty :Garen "5"^^xsd:integer)
+
+# Individual: :Glacial_Fissure (:Glacial_Fissure)
+
+ClassAssertion(:KnockUp :Glacial_Fissure)
+ClassAssertion(:RangedAbility :Glacial_Fissure)
+ClassAssertion(:Slow :Glacial_Fissure)
+DataPropertyAssertion(:hasRange :Glacial_Fissure "1250"^^xsd:integer)
+
+# Individual: :Glacial_Path (:Glacial_Path)
+
+ClassAssertion(:MobilityAbility :Glacial_Path)
+ClassAssertion(:UntargetedAbility :Glacial_Path)
+DataPropertyAssertion(:hasRange :Glacial_Path "1050"^^xsd:integer)
+
+# Individual: :Hawkshot (:Hawkshot)
+
+ClassAssertion(:RangedAbility :Hawkshot)
+DataPropertyAssertion(:hasRange :Hawkshot "999999"^^xsd:integer)
+
+# Individual: :Hymn_of_Valor (:Hymn_of_Valor)
+
+ClassAssertion(:Aura :Hymn_of_Valor)
+ClassAssertion(:SelfModifier :Hymn_of_Valor)
+ClassAssertion(:TeamModifier :Hymn_of_Valor)
+DataPropertyAssertion(:hasRange :Hymn_of_Valor "850"^^xsd:integer)
+
+# Individual: :Ice_Shard (:Ice_Shard)
+
+ClassAssertion(:Slow :Ice_Shard)
+ClassAssertion(:UntargetedAbility :Ice_Shard)
+DataPropertyAssertion(:hasRange :Ice_Shard "725"^^xsd:integer)
+
+# Individual: :Iceborn (:Iceborn)
+
+ClassAssertion(:PassiveAbility :Iceborn)
+ClassAssertion(:SelfModifier :Iceborn)
+
+# Individual: :Illumination (:Illumination)
+
+ClassAssertion(:EnemyModifier :Illumination)
+ClassAssertion(:PassiveAbility :Illumination)
+
+# Individual: :Jinx (:Jinx)
+
+ClassAssertion(:Marksman :Jinx)
+ObjectPropertyAssertion(:hasAbility1 :Jinx :Switcheroo!)
+ObjectPropertyAssertion(:hasAbility2 :Jinx :Zap!)
+ObjectPropertyAssertion(:hasAbility3 :Jinx :Flame_Chompers!)
+ObjectPropertyAssertion(:hasAbilityPassive :Jinx :Get_Excited!)
+ObjectPropertyAssertion(:hasAbilityUltimate :Jinx :Super_Mega_Death_Rocket!)
+DataPropertyAssertion(:Ability_Power :Jinx "4"^^xsd:integer)
+DataPropertyAssertion(:Attack_Power :Jinx "9"^^xsd:integer)
+DataPropertyAssertion(:Defense_Power :Jinx "2"^^xsd:integer)
+DataPropertyAssertion(:Difficulty :Jinx "6"^^xsd:integer)
+
+# Individual: :Judgment (:Judgment)
+
+ClassAssertion(:UntargetedAbility :Judgment)
+ObjectPropertyAssertion(:isAbilityOf :Judgment :Garen)
+DataPropertyAssertion(:hasRange :Judgment "300"^^xsd:integer)
+
+# Individual: :Leap (:Leap)
+
+ClassAssertion(:MobilityAbility :Leap)
+ClassAssertion(:UntargetedAbility :Leap)
+DataPropertyAssertion(:hasRange :Leap "700"^^xsd:integer)
+
+# Individual: :Leap_Evolved (:Leap_Evolved)
+
+ClassAssertion(:MobilityAbility :Leap_Evolved)
+ClassAssertion(:UntargetedAbility :Leap_Evolved)
+DataPropertyAssertion(:hasRange :Leap_Evolved "900"^^xsd:integer)
+
+# Individual: :Light_Binding (:Light_Binding)
+
+ClassAssertion(:Root :Light_Binding)
+ClassAssertion(:UntargetedAbility :Light_Binding)
+DataPropertyAssertion(:hasRange :Light_Binding "1175"^^xsd:integer)
+
+# Individual: :Lissandra (:Lissandra)
+
+ClassAssertion(:Mage :Lissandra)
+ObjectPropertyAssertion(:hasAbility1 :Lissandra :Ice_Shard)
+ObjectPropertyAssertion(:hasAbility2 :Lissandra :Ring_of_Frost)
+ObjectPropertyAssertion(:hasAbility3 :Lissandra :Glacial_Path)
+ObjectPropertyAssertion(:hasAbilityPassive :Lissandra :Iceborn)
+ObjectPropertyAssertion(:hasAbilityUltimate :Lissandra :Frozen_Tomb)
+DataPropertyAssertion(:Ability_Power :Lissandra "8"^^xsd:integer)
+DataPropertyAssertion(:Attack_Power :Lissandra "2"^^xsd:integer)
+DataPropertyAssertion(:Defense_Power :Lissandra "5"^^xsd:integer)
+DataPropertyAssertion(:Difficulty :Lissandra "6"^^xsd:integer)
+
+# Individual: :Lucent_Singularity (:Lucent_Singularity)
+
+ClassAssertion(:Slow :Lucent_Singularity)
+ClassAssertion(:UntargetedAbility :Lucent_Singularity)
+DataPropertyAssertion(:hasRange :Lucent_Singularity "1100"^^xsd:integer)
+
+# Individual: :Lux (:Lux)
+
+ClassAssertion(:Mage :Lux)
+ObjectPropertyAssertion(:hasAbility1 :Lux :Light_Binding)
+ObjectPropertyAssertion(:hasAbility2 :Lux :Prismatic_Barrier)
+ObjectPropertyAssertion(:hasAbility3 :Lux :Lucent_Singularity)
+ObjectPropertyAssertion(:hasAbilityPassive :Lux :Illumination)
+ObjectPropertyAssertion(:hasAbilityUltimate :Lux :Final_Spark)
+DataPropertyAssertion(:Ability_Power :Lux "9"^^xsd:integer)
+DataPropertyAssertion(:Attack_Power :Lux "2"^^xsd:integer)
+DataPropertyAssertion(:Defense_Power :Lux "4"^^xsd:integer)
+DataPropertyAssertion(:Difficulty :Lux "5"^^xsd:integer)
+
+# Individual: :MeleeImmediateProximity (:MeleeImmediateProximity)
+
+ClassAssertion(:MeleeAuto :MeleeImmediateProximity)
+
+# Individual: :MeleeMediumProximity (:MeleeMediumProximity)
+
+ClassAssertion(:MeleeAuto :MeleeMediumProximity)
+
+# Individual: :Nimbus_Strike (:Nimbus_Strike)
+
+ClassAssertion(:SelfModifier :Nimbus_Strike)
+ClassAssertion(:TargetedAbility :Nimbus_Strike)
+DataPropertyAssertion(:hasRange :Nimbus_Strike "625"^^xsd:integer)
+
+# Individual: :Overload (:Overload)
+
+ClassAssertion(:EnemyModifier :Overload)
+ClassAssertion(:PassiveAbility :Overload)
+ClassAssertion(:UntargetedAbility :Overload)
+DataPropertyAssertion(:hasRange :Overload "1000"^^xsd:integer)
+
+# Individual: :Perseverance (:Perseverance)
+
+ClassAssertion(:PassiveAbility :Perseverance)
+ClassAssertion(:SelfModifier :Perseverance)
+ObjectPropertyAssertion(:isAbilityOf :Perseverance :Garen)
+
+# Individual: :Power_Chord (:Power_Chord)
+
+ClassAssertion(:PassiveAbility :Power_Chord)
+ClassAssertion(:SelfModifier :Power_Chord)
+ClassAssertion(:TeamModifier :Power_Chord)
+
+# Individual: :Prismatic_Barrier (:Prismatic_Barrier)
+
+ClassAssertion(:SelfModifier :Prismatic_Barrier)
+ClassAssertion(:TeamModifier :Prismatic_Barrier)
+ClassAssertion(:UntargetedAbility :Prismatic_Barrier)
+DataPropertyAssertion(:hasRange :Prismatic_Barrier "1075"^^xsd:integer)
+
+# Individual: :Realm_Warp (:Realm_Warp)
+
+ClassAssertion(:MobilityAbility :Realm_Warp)
+ClassAssertion(:UntargetedAbility :Realm_Warp)
+DataPropertyAssertion(:hasRange :Realm_Warp "1750"^^xsd:integer)
+
+# Individual: :RedTeam (:RedTeam)
+
+ClassAssertion(:Team :RedTeam)
+
+# Individual: :Ring_of_Frost (:Ring_of_Frost)
+
+ClassAssertion(:Root :Ring_of_Frost)
+DataPropertyAssertion(:hasRange :Ring_of_Frost "450"^^xsd:integer)
+
+# Individual: :Rune_Prison (:Rune_Prison)
+
+ClassAssertion(:Root :Rune_Prison)
+ClassAssertion(:TargetedAbility :Rune_Prison)
+DataPropertyAssertion(:hasRange :Rune_Prison "615"^^xsd:integer)
+
+# Individual: :Ryze (:Ryze)
+
+ClassAssertion(:Mage :Ryze)
+ObjectPropertyAssertion(:hasAbility1 :Ryze :Overload)
+ObjectPropertyAssertion(:hasAbility2 :Ryze :Rune_Prison)
+ObjectPropertyAssertion(:hasAbility3 :Ryze :Spell_Flux)
+ObjectPropertyAssertion(:hasAbilityPassive :Ryze :Arcane_Mastery)
+ObjectPropertyAssertion(:hasAbilityUltimate :Ryze :Realm_Warp)
+DataPropertyAssertion(:Ability_Power :Ryze "10"^^xsd:integer)
+DataPropertyAssertion(:Attack_Power :Ryze "2"^^xsd:integer)
+DataPropertyAssertion(:Defense_Power :Ryze "2"^^xsd:integer)
+DataPropertyAssertion(:Difficulty :Ryze "7"^^xsd:integer)
+
+# Individual: :Shyvana (:Shyvana)
+
+ClassAssertion(:Fighter :Shyvana)
+ObjectPropertyAssertion(:hasAbility1 :Shyvana :Twin_Bite)
+ObjectPropertyAssertion(:hasAbility1 :Shyvana :Twin_Bite_Dragon_Form)
+ObjectPropertyAssertion(:hasAbility1_Modify :Shyvana :Twin_Bite_Dragon_Form)
+ObjectPropertyAssertion(:hasAbility2 :Shyvana :Burnout)
+ObjectPropertyAssertion(:hasAbility2_Modify :Shyvana :Burnout_Dragon_Form)
+ObjectPropertyAssertion(:hasAbility3 :Shyvana :Flame_Breath)
+ObjectPropertyAssertion(:hasAbilityPassive :Shyvana :Dragonborn)
+ObjectPropertyAssertion(:hasAbilityUltimate :Shyvana :Dragon's_Descent)
+DataPropertyAssertion(:Ability_Power :Shyvana "3"^^xsd:integer)
+DataPropertyAssertion(:Attack_Power :Shyvana "8"^^xsd:integer)
+DataPropertyAssertion(:Defense_Power :Shyvana "6"^^xsd:integer)
+DataPropertyAssertion(:Difficulty :Shyvana "4"^^xsd:integer)
+
+# Individual: :Sona (:Sona)
+
+ClassAssertion(:Support :Sona)
+ObjectPropertyAssertion(:hasAbility1 :Sona :Hymn_of_Valor)
+ObjectPropertyAssertion(:hasAbility2 :Sona :Aria_of_Perseverance)
+ObjectPropertyAssertion(:hasAbility3 :Sona :Song_of_Celerity)
+ObjectPropertyAssertion(:hasAbilityPassive :Sona :Power_Chord)
+ObjectPropertyAssertion(:hasAbilityUltimate :Sona :Crescendo)
+DataPropertyAssertion(:Ability_Power :Sona "8"^^xsd:integer)
+DataPropertyAssertion(:Attack_Power :Sona "5"^^xsd:integer)
+DataPropertyAssertion(:Defense_Power :Sona "2"^^xsd:integer)
+DataPropertyAssertion(:Difficulty :Sona "4"^^xsd:integer)
+
+# Individual: :Song_of_Celerity (:Song_of_Celerity)
+
+ClassAssertion(:Aura :Song_of_Celerity)
+ClassAssertion(:EnemyModifier :Song_of_Celerity)
+ClassAssertion(:SelfModifier :Song_of_Celerity)
+ClassAssertion(:Slow :Song_of_Celerity)
+ClassAssertion(:TeamModifier :Song_of_Celerity)
+
+# Individual: :Spell_Flux (:Spell_Flux)
+
+ClassAssertion(:EnemyModifier :Spell_Flux)
+ClassAssertion(:TargetedAbility :Spell_Flux)
+DataPropertyAssertion(:hasRange :Spell_Flux "615"^^xsd:integer)
+
+# Individual: :Stand_Behind_Me (:Stand_Behind_Me)
+
+ClassAssertion(:RangedAbility :Stand_Behind_Me)
+DataPropertyAssertion(:hasRange :Stand_Behind_Me "650"^^xsd:integer)
+
+# Individual: :Stone_Skin (:Stone_Skin)
+
+ClassAssertion(:PassiveAbility :Stone_Skin)
+ClassAssertion(:SelfModifier :Stone_Skin)
+
+# Individual: :Taste_Their_Fear (:Taste_Their_Fear)
+
+ClassAssertion(:MeleeAbility :Taste_Their_Fear)
+DataPropertyAssertion(:hasRange :Taste_Their_Fear "0"^^xsd:integer)
+
+# Individual: :Taste_Their_Fear_Evolved (:Taste_Their_Fear_Evolved)
+
+ClassAssertion(:MeleeAbility :Taste_Their_Fear_Evolved)
+ClassAssertion(:SelfModifier :Taste_Their_Fear_Evolved)
+DataPropertyAssertion(:hasRange :Taste_Their_Fear_Evolved "0"^^xsd:integer)
+
+# Individual: :Twin_Bite (:Twin_Bite)
+
+ClassAssertion(:MeleeAbility :Twin_Bite)
+DataPropertyAssertion(:hasRange :Twin_Bite "0"^^xsd:integer)
+
+# Individual: :Twin_Bite_Dragon_Form (:Twin_Bite_Dragon_Form)
+
+ClassAssertion(:MeleeAbility :Twin_Bite_Dragon_Form)
+ClassAssertion(:SelfModifier :Twin_Bite_Dragon_Form)
+DataPropertyAssertion(:hasRange :Twin_Bite_Dragon_Form "0"^^xsd:integer)
+
+# Individual: :Unbreakable (:Unbreakable)
+
+ClassAssertion(:MeleeAbility :Unbreakable)
+
+# Individual: :Unseen_Threat (:Unseen_Threat)
+
+ClassAssertion(:EnemyModifier :Unseen_Threat)
+ClassAssertion(:PassiveAbility :Unseen_Threat)
+ClassAssertion(:SelfModifier :Unseen_Threat)
+
+# Individual: :Void_Assault (:Void_Assault)
+
+ClassAssertion(:PassiveAbility :Void_Assault)
+ClassAssertion(:SelfModifier :Void_Assault)
+
+# Individual: :Void_Assault_Evolved (:Void_Assault_Evolved)
+
+ClassAssertion(:PassiveAbility :Void_Assault_Evolved)
+ClassAssertion(:SelfModifier :Void_Assault_Evolved)
+
+# Individual: :Void_Spike (:Void_Spike)
+
+ClassAssertion(:EnemyModifier :Void_Spike)
+ClassAssertion(:SelfModifier :Void_Spike)
+ClassAssertion(:UntargetedAbility :Void_Spike)
+DataPropertyAssertion(:hasRange :Void_Spike "1000"^^xsd:integer)
+
+# Individual: :Void_Spike_Evolved (:Void_Spike_Evolved)
+
+ClassAssertion(:EnemyModifier :Void_Spike_Evolved)
+ClassAssertion(:SelfModifier :Void_Spike_Evolved)
+ClassAssertion(:UntargetedAbility :Void_Spike_Evolved)
+DataPropertyAssertion(:hasRange :Void_Spike_Evolved "1000"^^xsd:integer)
+
+# Individual: :Volley (:Volley)
+
+ClassAssertion(:RangedAbility :Volley)
+ClassAssertion(:Slow :Volley)
+DataPropertyAssertion(:hasRange :Volley "1200"^^xsd:integer)
+
+# Individual: :Wukong (:Wukong)
+
+ClassAssertion(:Fighter :Wukong)
+ObjectPropertyAssertion(:hasAbility1 :Wukong :Crushing_Blow)
+ObjectPropertyAssertion(:hasAbility2 :Wukong :Decoy)
+ObjectPropertyAssertion(:hasAbility3 :Wukong :Nimbus_Strike)
+ObjectPropertyAssertion(:hasAbilityPassive :Wukong :Stone_Skin)
+ObjectPropertyAssertion(:hasAbilityUltimate :Wukong :Cyclone)
+DataPropertyAssertion(:Ability_Power :Wukong "2"^^xsd:integer)
+DataPropertyAssertion(:Attack_Power :Wukong "8"^^xsd:integer)
+DataPropertyAssertion(:Defense_Power :Wukong "5"^^xsd:integer)
+DataPropertyAssertion(:Difficulty :Wukong "3"^^xsd:integer)
+
+# Individual: :Dragon's_Descent (:Dragon's_Descent)
+
+ClassAssertion(:KnockBack :Dragon's_Descent)
+ClassAssertion(:SelfModifier :Dragon's_Descent)
+ClassAssertion(:UntargetedAbility :Dragon's_Descent)
+DataPropertyAssertion(:hasRange :Dragon's_Descent "1000"^^xsd:integer)
+
+# Individual: :Flame_Chompers! (:Flame_Chompers!)
+
+ClassAssertion(:Root :Flame_Chompers!)
+ClassAssertion(:UntargetedAbility :Flame_Chompers!)
+DataPropertyAssertion(:hasRange :Flame_Chompers! "900"^^xsd:integer)
+
+# Individual: :Get_Excited! (:Get_Excited!)
+
+ClassAssertion(:PassiveAbility :Get_Excited!)
+ClassAssertion(:SelfModifier :Get_Excited!)
+
+# Individual: :Kha'zix (:Kha'zix)
+
+ClassAssertion(:Assassin :Kha'zix)
+ObjectPropertyAssertion(:hasAbility1 :Kha'zix :Taste_Their_Fear)
+ObjectPropertyAssertion(:hasAbility1_Modify :Kha'zix :Taste_Their_Fear_Evolved)
+ObjectPropertyAssertion(:hasAbility2 :Kha'zix :Void_Spike)
+ObjectPropertyAssertion(:hasAbility2_Modify :Kha'zix :Void_Spike_Evolved)
+ObjectPropertyAssertion(:hasAbility3 :Kha'zix :Leap)
+ObjectPropertyAssertion(:hasAbility3_Modify :Kha'zix :Leap_Evolved)
+ObjectPropertyAssertion(:hasAbilityPassive :Kha'zix :Unseen_Threat)
+ObjectPropertyAssertion(:hasAbilityUltimate :Kha'zix :Void_Assault)
+ObjectPropertyAssertion(:hasAbilityUltimate_Modify :Kha'zix :Void_Assault_Evolved)
+DataPropertyAssertion(:Ability_Power :Kha'zix "3"^^xsd:integer)
+DataPropertyAssertion(:Attack_Power :Kha'zix "9"^^xsd:integer)
+DataPropertyAssertion(:Defense_Power :Kha'zix "4"^^xsd:integer)
+DataPropertyAssertion(:Difficulty :Kha'zix "6"^^xsd:integer)
+
+# Individual: :Ranger's_Focus (:Ranger's_Focus)
+
+ClassAssertion(:RangedAbility :Ranger's_Focus)
+DataPropertyAssertion(:hasRange :Ranger's_Focus "0"^^xsd:integer)
+
+# Individual: :Super_Mega_Death_Rocket! (:Super_Mega_Death_Rocket!)
+
+ClassAssertion(:UntargetedAbility :Super_Mega_Death_Rocket!)
+DataPropertyAssertion(:hasRange :Super_Mega_Death_Rocket! "999999"^^xsd:integer)
+
+# Individual: :Switcheroo! (:Switcheroo!)
+
+ClassAssertion(:SelfModifier :Switcheroo!)
+
+# Individual: :Winter's_Bite (:Winter's_Bite)
+
+ClassAssertion(:RangedAbility :Winter's_Bite)
+ClassAssertion(:Slow :Winter's_Bite)
+DataPropertyAssertion(:hasRange :Winter's_Bite "1000"^^xsd:integer)
+
+# Individual: :Zap! (:Zap!)
+
+ClassAssertion(:Slow :Zap!)
+ClassAssertion(:UntargetedAbility :Zap!)
+DataPropertyAssertion(:hasRange :Zap! "1500"^^xsd:integer)
+
+
+DisjointClasses(:CasterMinion :MeleeMinion :SiegeMinion :SuperMinion)
+DisjointClasses(:Charm :Fear :Flee :Taunt)
+DisjointClasses(:KnockAside :KnockBack :KnockUp :Pull)
+AnnotationAssertion(rdfs:comment owl:Thing "To reduce the scenarios and details we need to map to our ontology, let's restrict the 
+Game mode: 5v5 Ranked
+Map: Summoner's Rift
+Champion: 
+ASHE,GAREN,JINX,KHA’ZIX,LISSANDRA,LUX,RYZE,SHYVANA,WUKONG
+Abilities:
+For champions above
+
+For the constraint of time, focus for ontology was given on champions and their abilities more so any other relationship."@en)
+)

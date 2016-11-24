@@ -1,0 +1,7 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Protege 4.3";
+CFBundleShortVersionString = "InstallAnywhere 2012 Installer";
+CFBundleGetInfoString = "InstallAnywhere 2012 Installer";
+NSHumanReadableCopyright = "Copyright © 2012 Flexera Software LLC";
+CFBundleIdentifier = "iainstall.994d7f3a-1ec1-11b2-b321-ef29621bcc1c";

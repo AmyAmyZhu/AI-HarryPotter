@@ -5,10 +5,9 @@ dist/
 nbdist/
 .nb-gradle/
 .DS_Store
+*/.DS_Store
 .gitignore.swp
 Assignment1/.metadata/*
 Assignment1/Setence Generator/src/.metadata/*
 Assignment1/Setence Generator/nbproject/private/
-.DS_Store
 
-Assignment1/.DS_Store

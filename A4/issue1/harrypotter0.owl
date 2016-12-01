@@ -32,6 +32,36 @@
     
 
 
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isCoveredIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isCoveredIn">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#teaches"/>
+        <rdfs:range rdf:resource="&untitled-ontology-229;Course"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-229;MagicalSpell"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isTaughtBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isTaughtBy">
+        <rdfs:domain rdf:resource="&untitled-ontology-229;Course"/>
+        <rdfs:range rdf:resource="&untitled-ontology-229;Professor"/>
+        <owl:inverseOf rdf:resource="&untitled-ontology-229;isTeacherOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#teaches">
+        <rdfs:domain rdf:resource="&untitled-ontology-229;Course"/>
+        <rdfs:range rdf:resource="&untitled-ontology-229;MagicalSpell"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/isChildOf -->
 
     <owl:ObjectProperty rdf:about="&untitled-ontology-229;isChildOf">
@@ -154,6 +184,70 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Conjuration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Conjuration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Transfiguration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#HumanTransfiguration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#HumanTransfiguration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Transformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#SpellsCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#SpellsCourse">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Switching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Switching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Transformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Transfiguration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Transfiguration">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;MagicalSpell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Transformation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Transformation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Transfiguration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Untransfiguration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Untransfiguration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Transfiguration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Vanishment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Vanishment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Transfiguration"/>
+    </owl:Class>
     
 
 
@@ -516,11 +610,41 @@
     
 
 
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#TransfigurationClass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#TransfigurationClass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#SpellsCourse"/>
+        <teaches rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#VanishingSpell"/>
+        <isTaughtBy rdf:resource="&untitled-ontology-229;AlbusDumbledore"/>
+        <isTaughtBy rdf:resource="&untitled-ontology-229;MinervaMcGonigle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#VanishingSpell -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#VanishingSpell">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Vanishment"/>
+        <isCoveredIn rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#TransfigurationClass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#VeraVerto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#VeraVerto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Transformation"/>
+        <isCoveredIn rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#TransfigurationClass"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/AlbusDumbledore -->
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;AlbusDumbledore">
         <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
         <rdf:type rdf:resource="&untitled-ontology-229;Headmaster"/>
+        <untitled-ontology-229:isTeacherOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#TransfigurationClass"/>
         <untitled-ontology-229:isOwnerOf rdf:resource="&untitled-ontology-229;Fawkes"/>
     </owl:NamedIndividual>
     
@@ -705,6 +829,7 @@
         <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
         <rdf:type rdf:resource="&untitled-ontology-229;Professor"/>
         <rdf:type rdf:resource="&untitled-ontology-229;Shapeshifter"/>
+        <untitled-ontology-229:isTeacherOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#TransfigurationClass"/>
     </owl:NamedIndividual>
     
 

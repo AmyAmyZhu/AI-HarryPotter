@@ -517,6 +517,7 @@
     <owl:Class rdf:about="&untitled-ontology-229;Owl">
         <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Creature"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Owl"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Owl_ch"/>
     </owl:Class>
     
 
@@ -851,6 +852,7 @@
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;Hedwig">
         <rdf:type rdf:resource="&untitled-ontology-229;Owl"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Hedwig"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#hedwig"/>
     </owl:NamedIndividual>
     
 

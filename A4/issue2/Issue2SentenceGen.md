@@ -9,27 +9,30 @@ Harry Potter is a good wizard and student. He is an owner of Hedwig and the Cloa
 ###Original
 Albus Dumbledore is Headmaster and Good Wizard. Albus Dumbledore is owner of Fawkes.
 ###Modified
-Albus Dumbledore is a headmaster and good wizard. He is an owner of Fawkes. He is covered in Switching Spell.
+
+Albus Dumbledore is a headmaster and good wizard. He is a teacher of Switching Class and Transfiguration Class. He is an owner of Fawkes.
 
 
 ##MinervaMcGonigle 
 ###Original
 Minerva Mc Gonigle is Shapeshifter, Professor and Good Wizard.
 ###Modified
-Minerva Mc Gonigle is a shapeshifter, professor and good wizard.
+**Note: no NL name for this one, so 'He/she is' correct**
+Minerva Mc Gonigle is a shapeshifter, professor and good wizard. He/she is a teacher of Switching Class and Transfiguration Class. He/she is practitioner of Switching Spell.
 
 
 ##SwitchingSpell
 ###Original
 *NULL*
 ###Modified
-Switching Spell is a Switching. Switching Spell has practitioner Albus Dumbledore, Harry Potter, Hermoine Granger, and Minerva Mc Gonigle.
+Switching Spell is a Switching. Switching Spell is covered in Switching Class. Switching Spell has practitioner Albus Dumbledore, Harry Potter, Hermoine Granger, and Minerva Mc Gonigle.
 
 
 ##SwitchingClass
 ###Original
 *NULL*
 ###Modified
+
 Switching Class is a Spells Course. Switching Class teaches Switching Spell. Switching Class is taught by Albus Dumbledore and Minerva Mc Gonigle.
 
 

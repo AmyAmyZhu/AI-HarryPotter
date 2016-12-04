@@ -60,6 +60,9 @@
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#hasPractitioner -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#hasPractitioner">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isPractitionerOf"/>
+        <rdfs:range rdf:resource="&untitled-ontology-229;Being"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-229;MagicalSpell"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -68,6 +71,9 @@
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isCoveredIn -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isCoveredIn">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#teaches"/>
+        <rdfs:range rdf:resource="&untitled-ontology-229;Course"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-229;MagicalSpell"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -76,6 +82,8 @@
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isPractitionerOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isPractitionerOf">
+        <rdfs:domain rdf:resource="&untitled-ontology-229;Being"/>
+        <rdfs:range rdf:resource="&untitled-ontology-229;MagicalSpell"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -84,6 +92,9 @@
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isTaughtBy -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isTaughtBy">
+        <rdfs:domain rdf:resource="&untitled-ontology-229;Course"/>
+        <rdfs:range rdf:resource="&untitled-ontology-229;Professor"/>
+        <owl:inverseOf rdf:resource="&untitled-ontology-229;isTeacherOf"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -92,6 +103,8 @@
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#teaches -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#teaches">
+        <rdfs:domain rdf:resource="&untitled-ontology-229;Course"/>
+        <rdfs:range rdf:resource="&untitled-ontology-229;MagicalSpell"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -691,6 +704,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#SwitchingSpell">
         <rdf:type rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Switching"/>
+        <isCoveredIn rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#SwitchingClass"/>
         <hasPractitioner rdf:resource="&untitled-ontology-229;AlbusDumbledore"/>
         <hasPractitioner rdf:resource="&untitled-ontology-229;HarryPotter"/>
         <hasPractitioner rdf:resource="&untitled-ontology-229;HermoineGranger"/>
@@ -714,6 +728,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#VanishmentSpell">
         <rdf:type rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Vanishment"/>
+        <isCoveredIn rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#TransfigurationClass"/>
     </owl:NamedIndividual>
     
 
@@ -733,7 +748,8 @@
         <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
         <rdf:type rdf:resource="&untitled-ontology-229;Headmaster"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#AlbusDumbledore"/>
-        <isCoveredIn rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#SwitchingSpell"/>
+        <untitled-ontology-229:isTeacherOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#SwitchingClass"/>
+        <untitled-ontology-229:isTeacherOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#TransfigurationClass"/>
         <untitled-ontology-229:isOwnerOf rdf:resource="&untitled-ontology-229;Fawkes"/>
     </owl:NamedIndividual>
     
@@ -863,7 +879,6 @@
         <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
         <rdf:type rdf:resource="&untitled-ontology-229;Student"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#HermoineGranger"/>
-        <isPractitionerOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#SwitchingSpell"/>
         <untitled-ontology-229:isHouseMemberOf rdf:resource="&untitled-ontology-229;GryffindorHouse"/>
         <untitled-ontology-229:isStudentOf rdf:resource="&untitled-ontology-229;Hogwarts"/>
     </owl:NamedIndividual>
@@ -935,6 +950,9 @@
         <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
         <rdf:type rdf:resource="&untitled-ontology-229;Professor"/>
         <rdf:type rdf:resource="&untitled-ontology-229;Shapeshifter"/>
+        <untitled-ontology-229:isTeacherOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#SwitchingClass"/>
+        <isPractitionerOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#SwitchingSpell"/>
+        <untitled-ontology-229:isTeacherOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#TransfigurationClass"/>
     </owl:NamedIndividual>
     
 

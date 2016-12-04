@@ -82,13 +82,17 @@
 
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/isChildOf -->
 
-    <owl:ObjectProperty rdf:about="&untitled-ontology-229;isChildOf"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-229;isChildOf">
+        <rdfs:domain rdf:resource="&untitled-ontology-229;Child"/>
+        <rdfs:range rdf:resource="&untitled-ontology-229;Parent"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/isHouseMemberOf -->
 
     <owl:ObjectProperty rdf:about="&untitled-ontology-229;isHouseMemberOf">
+        <rdfs:range rdf:resource="&untitled-ontology-229;House"/>
         <rdfs:domain rdf:resource="&untitled-ontology-229;Student"/>
     </owl:ObjectProperty>
     
@@ -96,7 +100,10 @@
 
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/isHouseOf -->
 
-    <owl:ObjectProperty rdf:about="&untitled-ontology-229;isHouseOf"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-229;isHouseOf">
+        <rdfs:domain rdf:resource="&untitled-ontology-229;House"/>
+        <rdfs:range rdf:resource="&untitled-ontology-229;SchoolOfMagic"/>
+    </owl:ObjectProperty>
     
 
 
@@ -104,6 +111,14 @@
 
     <owl:ObjectProperty rdf:about="&untitled-ontology-229;isOwnedBy">
         <rdfs:range rdf:resource="&untitled-ontology-229;Wizard"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-229;Creature"/>
+                    <rdf:Description rdf:about="&untitled-ontology-229;MagicalItem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
     </owl:ObjectProperty>
     
 
@@ -113,6 +128,14 @@
     <owl:ObjectProperty rdf:about="&untitled-ontology-229;isOwnerOf">
         <rdfs:domain rdf:resource="&untitled-ontology-229;Wizard"/>
         <owl:inverseOf rdf:resource="&untitled-ontology-229;isOwnedBy"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-229;Creature"/>
+                    <rdf:Description rdf:about="&untitled-ontology-229;MagicalItem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -120,6 +143,8 @@
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/isParentOf -->
 
     <owl:ObjectProperty rdf:about="&untitled-ontology-229;isParentOf">
+        <rdfs:range rdf:resource="&untitled-ontology-229;Child"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-229;Parent"/>
         <owl:inverseOf rdf:resource="&untitled-ontology-229;isChildOf"/>
     </owl:ObjectProperty>
     
@@ -128,6 +153,7 @@
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/isStudentOf -->
 
     <owl:ObjectProperty rdf:about="&untitled-ontology-229;isStudentOf">
+        <rdfs:range rdf:resource="&untitled-ontology-229;SchoolOfMagic"/>
         <rdfs:domain rdf:resource="&untitled-ontology-229;Student"/>
     </owl:ObjectProperty>
     
@@ -249,6 +275,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Broomstick -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Broomstick">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;MagicalItem"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/CareOfMagicalCreaturesCourse -->
 
     <owl:Class rdf:about="&untitled-ontology-229;CareOfMagicalCreaturesCourse">
@@ -269,6 +303,22 @@
 
     <owl:Class rdf:about="&untitled-ontology-229;CharmsCourse">
         <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Child -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Child">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;FamilyEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Cloak -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Cloak">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;MagicalItem"/>
     </owl:Class>
     
 
@@ -335,6 +385,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/FamilyEntity -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;FamilyEntity"/>
+    
+
+
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/GoodWizard -->
 
     <owl:Class rdf:about="&untitled-ontology-229;GoodWizard">
@@ -347,6 +403,14 @@
 
     <owl:Class rdf:about="&untitled-ontology-229;Headmaster">
         <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Professor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/House -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;House">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;SchoolEntity"/>
     </owl:Class>
     
 
@@ -375,9 +439,23 @@
     
 
 
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/MagicalItem -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;MagicalItem"/>
+    
+
+
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/MagicalSpell -->
 
     <owl:Class rdf:about="&untitled-ontology-229;MagicalSpell"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Mirror -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Mirror">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;MagicalItem"/>
+    </owl:Class>
     
 
 
@@ -401,6 +479,14 @@
 
     <owl:Class rdf:about="&untitled-ontology-229;Owl">
         <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Parent -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Parent">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;FamilyEntity"/>
     </owl:Class>
     
 
@@ -445,6 +531,20 @@
     
 
 
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/SchoolEntity -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;SchoolEntity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/SchoolOfMagic -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;SchoolOfMagic">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;SchoolEntity"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Shapeshifter -->
 
     <owl:Class rdf:about="&untitled-ontology-229;Shapeshifter">
@@ -469,6 +569,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Stone -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Stone">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;MagicalItem"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Student -->
 
     <owl:Class rdf:about="&untitled-ontology-229;Student">
@@ -481,6 +589,14 @@
 
     <owl:Class rdf:about="&untitled-ontology-229;Unicorn">
         <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Wand -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Wand">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;MagicalItem"/>
     </owl:Class>
     
 
@@ -589,7 +705,9 @@
 
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Beauxbatons -->
 
-    <owl:NamedIndividual rdf:about="&untitled-ontology-229;Beauxbatons"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;Beauxbatons">
+        <rdf:type rdf:resource="&untitled-ontology-229;SchoolOfMagic"/>
+    </owl:NamedIndividual>
     
 
 
@@ -616,13 +734,17 @@
 
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Durmstrang -->
 
-    <owl:NamedIndividual rdf:about="&untitled-ontology-229;Durmstrang"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;Durmstrang">
+        <rdf:type rdf:resource="&untitled-ontology-229;SchoolOfMagic"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/ElderWand -->
 
-    <owl:NamedIndividual rdf:about="&untitled-ontology-229;ElderWand"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;ElderWand">
+        <rdf:type rdf:resource="&untitled-ontology-229;Wand"/>
+    </owl:NamedIndividual>
     
 
 
@@ -650,6 +772,7 @@
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/GryffindorHouse -->
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;GryffindorHouse">
+        <rdf:type rdf:resource="&untitled-ontology-229;House"/>
         <untitled-ontology-229:isHouseOf rdf:resource="&untitled-ontology-229;Hogwarts"/>
     </owl:NamedIndividual>
     
@@ -693,13 +816,16 @@
 
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Hogwarts -->
 
-    <owl:NamedIndividual rdf:about="&untitled-ontology-229;Hogwarts"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;Hogwarts">
+        <rdf:type rdf:resource="&untitled-ontology-229;SchoolOfMagic"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/HufflepuffHouse -->
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;HufflepuffHouse">
+        <rdf:type rdf:resource="&untitled-ontology-229;House"/>
         <untitled-ontology-229:isHouseOf rdf:resource="&untitled-ontology-229;Hogwarts"/>
     </owl:NamedIndividual>
     
@@ -757,7 +883,9 @@
 
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/MirrorOfErised -->
 
-    <owl:NamedIndividual rdf:about="&untitled-ontology-229;MirrorOfErised"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;MirrorOfErised">
+        <rdf:type rdf:resource="&untitled-ontology-229;Mirror"/>
+    </owl:NamedIndividual>
     
 
 
@@ -799,13 +927,16 @@
 
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/PhilosophersStone -->
 
-    <owl:NamedIndividual rdf:about="&untitled-ontology-229;PhilosophersStone"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;PhilosophersStone">
+        <rdf:type rdf:resource="&untitled-ontology-229;Stone"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/RavenclawHouse -->
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;RavenclawHouse">
+        <rdf:type rdf:resource="&untitled-ontology-229;House"/>
         <untitled-ontology-229:isHouseOf rdf:resource="&untitled-ontology-229;Hogwarts"/>
     </owl:NamedIndividual>
     
@@ -822,7 +953,9 @@
 
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/ResurrectionStone -->
 
-    <owl:NamedIndividual rdf:about="&untitled-ontology-229;ResurrectionStone"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;ResurrectionStone">
+        <rdf:type rdf:resource="&untitled-ontology-229;Stone"/>
+    </owl:NamedIndividual>
     
 
 
@@ -869,6 +1002,7 @@
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/SlytherinHouse -->
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;SlytherinHouse">
+        <rdf:type rdf:resource="&untitled-ontology-229;House"/>
         <untitled-ontology-229:isHouseOf rdf:resource="&untitled-ontology-229;Hogwarts"/>
     </owl:NamedIndividual>
     
@@ -876,7 +1010,9 @@
 
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/TheCloakOfInvisibility -->
 
-    <owl:NamedIndividual rdf:about="&untitled-ontology-229;TheCloakOfInvisibility"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;TheCloakOfInvisibility">
+        <rdf:type rdf:resource="&untitled-ontology-229;Cloak"/>
+    </owl:NamedIndividual>
     
 
 

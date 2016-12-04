@@ -7,7 +7,6 @@
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY nlowl "http://www.aueb.gr/users/ion/nlowl/nlowl#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY HP "http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/" >
     <!ENTITY untitled-ontology-229 "http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/" >
 ]>
 
@@ -19,11 +18,8 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:HP="http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/"
      xmlns:untitled-ontology-229="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP">
-        <owl:imports rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229"/>
-    </owl:Ontology>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229"/>
     
 
 
@@ -61,75 +57,138 @@
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/isChildOf -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#hasPractitioner -->
 
-    <owl:ObjectProperty rdf:about="&HP;isChildOf">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#hasPractitioner">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isCoveredIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isCoveredIn">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isPractitionerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isPractitionerOf">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isTaughtBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isTaughtBy">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#teaches">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/isChildOf -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-229;isChildOf">
         <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#ChildOf"/>
-        <rdfs:domain rdf:resource="&HP;Child"/>
-        <rdfs:range rdf:resource="&HP;Parent"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-229;Child"/>
+        <rdfs:range rdf:resource="&untitled-ontology-229;Parent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/isHouseMemberOf -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/isHouseMemberOf -->
 
-    <owl:ObjectProperty rdf:about="&HP;isHouseMemberOf">
+    <owl:ObjectProperty rdf:about="&untitled-ontology-229;isHouseMemberOf">
         <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#HouseMemberOf"/>
-        <rdfs:range rdf:resource="&HP;House"/>
+        <rdfs:range rdf:resource="&untitled-ontology-229;House"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-229;Student"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/isHouseOf -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/isHouseOf -->
 
-    <owl:ObjectProperty rdf:about="&HP;isHouseOf">
+    <owl:ObjectProperty rdf:about="&untitled-ontology-229;isHouseOf">
         <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#HouseOf"/>
-        <rdfs:domain rdf:resource="&HP;House"/>
-        <rdfs:range rdf:resource="&HP;SchoolOfMagic"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-229;House"/>
+        <rdfs:range rdf:resource="&untitled-ontology-229;SchoolOfMagic"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/isOwnedBy -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/isOwnedBy -->
 
-    <owl:ObjectProperty rdf:about="&HP;isOwnedBy"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-229;isOwnedBy">
+        <rdfs:range rdf:resource="&untitled-ontology-229;Wizard"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-229;Creature"/>
+                    <rdf:Description rdf:about="&untitled-ontology-229;MagicalItem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/isOwnerOf -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/isOwnerOf -->
 
-    <owl:ObjectProperty rdf:about="&HP;isOwnerOf">
+    <owl:ObjectProperty rdf:about="&untitled-ontology-229;isOwnerOf">
         <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#OnwerOf"/>
         <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#OwnerOf"/>
-        <owl:inverseOf rdf:resource="&HP;isOwnedBy"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-229;Wizard"/>
+        <owl:inverseOf rdf:resource="&untitled-ontology-229;isOwnedBy"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-229;Creature"/>
+                    <rdf:Description rdf:about="&untitled-ontology-229;MagicalItem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/isParentOf -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/isParentOf -->
 
-    <owl:ObjectProperty rdf:about="&HP;isParentOf">
+    <owl:ObjectProperty rdf:about="&untitled-ontology-229;isParentOf">
         <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#ParentOf"/>
-        <rdfs:range rdf:resource="&HP;Child"/>
-        <rdfs:domain rdf:resource="&HP;Parent"/>
-        <owl:inverseOf rdf:resource="&HP;isChildOf"/>
+        <rdfs:range rdf:resource="&untitled-ontology-229;Child"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-229;Parent"/>
+        <owl:inverseOf rdf:resource="&untitled-ontology-229;isChildOf"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/isStudentOf -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/isStudentOf -->
 
-    <owl:ObjectProperty rdf:about="&HP;isStudentOf">
+    <owl:ObjectProperty rdf:about="&untitled-ontology-229;isStudentOf">
         <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#StudentOf"/>
-        <rdfs:range rdf:resource="&HP;SchoolOfMagic"/>
+        <rdfs:range rdf:resource="&untitled-ontology-229;SchoolOfMagic"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-229;Student"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/isTeacherOf -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/isTeacherOf -->
 
-    <owl:ObjectProperty rdf:about="&HP;isTeacherOf">
+    <owl:ObjectProperty rdf:about="&untitled-ontology-229;isTeacherOf">
         <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#TeacherOf"/>
+        <rdfs:range rdf:resource="&untitled-ontology-229;Course"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-229;Professor"/>
     </owl:ObjectProperty>
     
 
@@ -145,18 +204,19 @@
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/hasAge -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/hasAge -->
 
-    <owl:DatatypeProperty rdf:about="&HP;hasAge">
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-229;hasAge">
         <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#hasAge"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-229;Being"/>
         <rdfs:range rdf:resource="&xsd;positiveInteger"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/hasInterest -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/hasInterest -->
 
-    <owl:DatatypeProperty rdf:about="&HP;hasInterest">
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-229;hasInterest">
         <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#hasInterest"/>
     </owl:DatatypeProperty>
     
@@ -173,99 +233,433 @@
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/Broomstick -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Conjuration -->
 
-    <owl:Class rdf:about="&HP;Broomstick">
-        <rdfs:subClassOf rdf:resource="&HP;MagicalItem"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Conjuration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Transfiguration"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/Child -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#HumanTransfiguration -->
 
-    <owl:Class rdf:about="&HP;Child">
-        <rdfs:subClassOf rdf:resource="&HP;FamilyEntity"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#HumanTransfiguration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Transformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#SpellsCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#SpellsCourse">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Switching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Switching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Transformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Transfiguration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Transfiguration">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;MagicalSpell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Transformation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Transformation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Transfiguration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Untransfiguration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Untransfiguration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Transfiguration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Vanishment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Vanishment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Transfiguration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Being -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Being"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Broomstick -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Broomstick">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;MagicalItem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/CareOfMagicalCreaturesCourse -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;CareOfMagicalCreaturesCourse">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Charm -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Charm">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;MagicalSpell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/CharmsCourse -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;CharmsCourse">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Child -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Child">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;FamilyEntity"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Child"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/Cloak -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Cloak -->
 
-    <owl:Class rdf:about="&HP;Cloak">
-        <rdfs:subClassOf rdf:resource="&HP;MagicalItem"/>
+    <owl:Class rdf:about="&untitled-ontology-229;Cloak">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;MagicalItem"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Cloak"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/FamilyEntity -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Course -->
 
-    <owl:Class rdf:about="&HP;FamilyEntity"/>
+    <owl:Class rdf:about="&untitled-ontology-229;Course"/>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/House -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Creature -->
 
-    <owl:Class rdf:about="&HP;House">
-        <rdfs:subClassOf rdf:resource="&HP;SchoolEntity"/>
+    <owl:Class rdf:about="&untitled-ontology-229;Creature">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Being"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/CruciatusCurse -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;CruciatusCurse">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Curse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Curse -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Curse">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;MagicalSpell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/DarkWizard -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;DarkWizard">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Wizard"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#DarkWizard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Deatheater -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Deatheater">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;DarkWizard"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Deatheater"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Dementor -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Dementor">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Dragon -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Dragon">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/FamilyEntity -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;FamilyEntity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/GoodWizard -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;GoodWizard">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Wizard"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#GoodWizard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Headmaster -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Headmaster">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Professor"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Headmaster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/House -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;House">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;SchoolEntity"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#House"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/MagicalItem -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/ImperiusCurse -->
 
-    <owl:Class rdf:about="&HP;MagicalItem"/>
+    <owl:Class rdf:about="&untitled-ontology-229;ImperiusCurse">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Curse"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/Mirror -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/KillingCurse -->
 
-    <owl:Class rdf:about="&HP;Mirror">
-        <rdfs:subClassOf rdf:resource="&HP;MagicalItem"/>
+    <owl:Class rdf:about="&untitled-ontology-229;KillingCurse">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Curse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/MagicalBeing -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;MagicalBeing">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Being"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/MagicalItem -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;MagicalItem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/MagicalSpell -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;MagicalSpell"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Mirror -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Mirror">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;MagicalItem"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Mirror"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/Parent -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Muggle -->
 
-    <owl:Class rdf:about="&HP;Parent">
-        <rdfs:subClassOf rdf:resource="&HP;FamilyEntity"/>
+    <owl:Class rdf:about="&untitled-ontology-229;Muggle">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;NonMagicalBeing"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Muggle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/SchoolEntity -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/NonMagicalBeing -->
 
-    <owl:Class rdf:about="&HP;SchoolEntity"/>
+    <owl:Class rdf:about="&untitled-ontology-229;NonMagicalBeing">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Being"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/SchoolOfMagic -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Owl -->
 
-    <owl:Class rdf:about="&HP;SchoolOfMagic">
-        <rdfs:subClassOf rdf:resource="&HP;SchoolEntity"/>
+    <owl:Class rdf:about="&untitled-ontology-229;Owl">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Creature"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Parent -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Parent">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;FamilyEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/PatronusCharm -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;PatronusCharm">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Charm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Phoenix -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Phoenix">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/PotionsCourse -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;PotionsCourse">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Professor -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Professor">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;SchoolBeing"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Professor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/SchoolBeing -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;SchoolBeing">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Being"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/SchoolEntity -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;SchoolEntity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/SchoolOfMagic -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;SchoolOfMagic">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;SchoolEntity"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#School"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/Stone -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Shapeshifter -->
 
-    <owl:Class rdf:about="&HP;Stone">
-        <rdfs:subClassOf rdf:resource="&HP;MagicalItem"/>
+    <owl:Class rdf:about="&untitled-ontology-229;Shapeshifter">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;MagicalBeing"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Shapeshifter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Snake -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Snake">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Creature"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Snake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Spell -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Spell">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;MagicalSpell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Stone -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Stone">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;MagicalItem"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Stone"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/Wand -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Student -->
 
-    <owl:Class rdf:about="&HP;Wand">
-        <rdfs:subClassOf rdf:resource="&HP;MagicalItem"/>
+    <owl:Class rdf:about="&untitled-ontology-229;Student">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;SchoolBeing"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Unicorn -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Unicorn">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Wand -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Wand">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;MagicalItem"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Wand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Werewolf -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Werewolf">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Creature"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Werewolf"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Wizard -->
+
+    <owl:Class rdf:about="&untitled-ontology-229;Wizard">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;MagicalBeing"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Wizard"/>
     </owl:Class>
     
 
@@ -281,316 +675,416 @@
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/AlbusDumbledore -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#SwitchingClass -->
 
-    <owl:NamedIndividual rdf:about="&HP;AlbusDumbledore">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#SwitchingClass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#SpellsCourse"/>
+        <teaches rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#SwitchingSpell"/>
+        <isTaughtBy rdf:resource="&untitled-ontology-229;AlbusDumbledore"/>
+        <isTaughtBy rdf:resource="&untitled-ontology-229;MinervaMcGonigle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#SwitchingSpell -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#SwitchingSpell">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Switching"/>
+        <hasPractitioner rdf:resource="&untitled-ontology-229;AlbusDumbledore"/>
+        <hasPractitioner rdf:resource="&untitled-ontology-229;HarryPotter"/>
+        <hasPractitioner rdf:resource="&untitled-ontology-229;HermoineGranger"/>
+        <hasPractitioner rdf:resource="&untitled-ontology-229;MinervaMcGonigle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#TransfigurationClass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#TransfigurationClass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#SpellsCourse"/>
+        <teaches rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#VanishmentSpell"/>
+        <isTaughtBy rdf:resource="&untitled-ontology-229;AlbusDumbledore"/>
+        <isTaughtBy rdf:resource="&untitled-ontology-229;MinervaMcGonigle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#VanishmentSpell -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#VanishmentSpell">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Vanishment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#VeraVerto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#VeraVerto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Transformation"/>
+        <isCoveredIn rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#TransfigurationClass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/AlbusDumbledore -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;AlbusDumbledore">
+        <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
+        <rdf:type rdf:resource="&untitled-ontology-229;Headmaster"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#AlbusDumbledore"/>
-        <HP:isOwnerOf rdf:resource="&HP;Fawkes"/>
+        <isCoveredIn rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#SwitchingSpell"/>
+        <untitled-ontology-229:isOwnerOf rdf:resource="&untitled-ontology-229;Fawkes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/ArthurWeasley -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/ArthurWeasley -->
 
-    <owl:NamedIndividual rdf:about="&HP;ArthurWeasley">
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;ArthurWeasley">
+        <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#ArthurWeasley"/>
-        <HP:isParentOf rdf:resource="&HP;GinnyWeasley"/>
-        <HP:isParentOf rdf:resource="&HP;RonaldWeasley"/>
+        <untitled-ontology-229:isParentOf rdf:resource="&untitled-ontology-229;GinnyWeasley"/>
+        <untitled-ontology-229:isParentOf rdf:resource="&untitled-ontology-229;RonaldWeasley"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/Beauxbatons -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Beauxbatons -->
 
-    <owl:NamedIndividual rdf:about="&HP;Beauxbatons">
-        <rdf:type rdf:resource="&HP;SchoolOfMagic"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;Beauxbatons">
+        <rdf:type rdf:resource="&untitled-ontology-229;SchoolOfMagic"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/DracoMalfoy -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/DracoMalfoy -->
 
-    <owl:NamedIndividual rdf:about="&HP;DracoMalfoy">
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;DracoMalfoy">
+        <rdf:type rdf:resource="&untitled-ontology-229;Student"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#DracoMalfoy"/>
-        <HP:isStudentOf rdf:resource="&HP;Hogwarts"/>
-        <HP:isChildOf rdf:resource="&HP;LuciusMalfoy"/>
-        <HP:isHouseMemberOf rdf:resource="&HP;SlytherinHouse"/>
+        <untitled-ontology-229:isStudentOf rdf:resource="&untitled-ontology-229;Hogwarts"/>
+        <untitled-ontology-229:isChildOf rdf:resource="&untitled-ontology-229;LuciusMalfoy"/>
+        <untitled-ontology-229:isHouseMemberOf rdf:resource="&untitled-ontology-229;SlytherinHouse"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/DudleyDursley -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/DudleyDursley -->
 
-    <owl:NamedIndividual rdf:about="&HP;DudleyDursley">
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;DudleyDursley">
+        <rdf:type rdf:resource="&untitled-ontology-229;Muggle"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#DudleyDursley"/>
-        <HP:isChildOf rdf:resource="&HP;PetuniaDursley"/>
-        <HP:isChildOf rdf:resource="&HP;VernonDursley"/>
+        <untitled-ontology-229:isChildOf rdf:resource="&untitled-ontology-229;PetuniaDursley"/>
+        <untitled-ontology-229:isChildOf rdf:resource="&untitled-ontology-229;VernonDursley"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/Durmstrang -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Durmstrang -->
 
-    <owl:NamedIndividual rdf:about="&HP;Durmstrang">
-        <rdf:type rdf:resource="&HP;SchoolOfMagic"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;Durmstrang">
+        <rdf:type rdf:resource="&untitled-ontology-229;SchoolOfMagic"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/ElderWand -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/ElderWand -->
 
-    <owl:NamedIndividual rdf:about="&HP;ElderWand">
-        <rdf:type rdf:resource="&HP;Wand"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;ElderWand">
+        <rdf:type rdf:resource="&untitled-ontology-229;Wand"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/Fawkes -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Fawkes -->
 
-    <owl:NamedIndividual rdf:about="&HP;Fawkes"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;Fawkes">
+        <rdf:type rdf:resource="&untitled-ontology-229;Phoenix"/>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/GinnyWeasley -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/GinnyWeasley -->
 
-    <owl:NamedIndividual rdf:about="&HP;GinnyWeasley">
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;GinnyWeasley">
+        <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
+        <rdf:type rdf:resource="&untitled-ontology-229;Student"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#GinnyWeasley"/>
-        <HP:isChildOf rdf:resource="&HP;ArthurWeasley"/>
-        <HP:isHouseMemberOf rdf:resource="&HP;GryffindorHouse"/>
-        <HP:isStudentOf rdf:resource="&HP;Hogwarts"/>
-        <HP:isChildOf rdf:resource="&HP;MollyWeasley"/>
+        <untitled-ontology-229:isChildOf rdf:resource="&untitled-ontology-229;ArthurWeasley"/>
+        <untitled-ontology-229:isHouseMemberOf rdf:resource="&untitled-ontology-229;GryffindorHouse"/>
+        <untitled-ontology-229:isStudentOf rdf:resource="&untitled-ontology-229;Hogwarts"/>
+        <untitled-ontology-229:isChildOf rdf:resource="&untitled-ontology-229;MollyWeasley"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/GryffindorHouse -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/GryffindorHouse -->
 
-    <owl:NamedIndividual rdf:about="&HP;GryffindorHouse">
-        <rdf:type rdf:resource="&HP;House"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;GryffindorHouse">
+        <rdf:type rdf:resource="&untitled-ontology-229;House"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#GryffindorHouse"/>
-        <HP:isHouseOf rdf:resource="&HP;Hogwarts"/>
+        <untitled-ontology-229:isHouseOf rdf:resource="&untitled-ontology-229;Hogwarts"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/HarryPotter -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/HarryPotter -->
 
-    <owl:NamedIndividual rdf:about="&HP;HarryPotter">
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;HarryPotter">
+        <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
+        <rdf:type rdf:resource="&untitled-ontology-229;Student"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#HarryPotter"/>
-        <HP:isHouseMemberOf rdf:resource="&HP;GryffindorHouse"/>
-        <HP:isOwnerOf rdf:resource="&HP;Hedwig"/>
-        <HP:isStudentOf rdf:resource="&HP;Hogwarts"/>
-        <HP:isChildOf rdf:resource="&HP;JamesPotter"/>
-        <HP:isChildOf rdf:resource="&HP;LilyPotter"/>
-        <HP:isOwnerOf rdf:resource="&HP;TheCloakOfInvisibility"/>
+        <isPractitionerOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#SwitchingSpell"/>
+        <isPractitionerOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#VanishmentSpell"/>
+        <untitled-ontology-229:isHouseMemberOf rdf:resource="&untitled-ontology-229;GryffindorHouse"/>
+        <untitled-ontology-229:isOwnerOf rdf:resource="&untitled-ontology-229;Hedwig"/>
+        <untitled-ontology-229:isStudentOf rdf:resource="&untitled-ontology-229;Hogwarts"/>
+        <untitled-ontology-229:isChildOf rdf:resource="&untitled-ontology-229;JamesPotter"/>
+        <untitled-ontology-229:isChildOf rdf:resource="&untitled-ontology-229;LilyPotter"/>
+        <untitled-ontology-229:isOwnerOf rdf:resource="&untitled-ontology-229;TheCloakOfInvisibility"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/Hedwig -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Hedwig -->
 
-    <owl:NamedIndividual rdf:about="&HP;Hedwig">
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;Hedwig">
+        <rdf:type rdf:resource="&untitled-ontology-229;Owl"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Hedwig"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/HermoineGranger -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/HermoineGranger -->
 
-    <owl:NamedIndividual rdf:about="&HP;HermoineGranger">
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;HermoineGranger">
+        <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
+        <rdf:type rdf:resource="&untitled-ontology-229;Student"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#HermoineGranger"/>
-        <HP:isHouseMemberOf rdf:resource="&HP;GryffindorHouse"/>
-        <HP:isStudentOf rdf:resource="&HP;Hogwarts"/>
+        <isPractitionerOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#SwitchingSpell"/>
+        <untitled-ontology-229:isHouseMemberOf rdf:resource="&untitled-ontology-229;GryffindorHouse"/>
+        <untitled-ontology-229:isStudentOf rdf:resource="&untitled-ontology-229;Hogwarts"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/Hogwarts -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Hogwarts -->
 
-    <owl:NamedIndividual rdf:about="&HP;Hogwarts">
-        <rdf:type rdf:resource="&HP;SchoolOfMagic"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;Hogwarts">
+        <rdf:type rdf:resource="&untitled-ontology-229;SchoolOfMagic"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Hogwarts"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/HufflepuffHouse -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/HufflepuffHouse -->
 
-    <owl:NamedIndividual rdf:about="&HP;HufflepuffHouse">
-        <rdf:type rdf:resource="&HP;House"/>
-        <HP:isHouseOf rdf:resource="&HP;Hogwarts"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;HufflepuffHouse">
+        <rdf:type rdf:resource="&untitled-ontology-229;House"/>
+        <untitled-ontology-229:isHouseOf rdf:resource="&untitled-ontology-229;Hogwarts"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/JamesPotter -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/JamesPotter -->
 
-    <owl:NamedIndividual rdf:about="&HP;JamesPotter">
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;JamesPotter">
+        <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
+        <rdf:type rdf:resource="&untitled-ontology-229;Shapeshifter"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#JamesPotter"/>
-        <HP:isParentOf rdf:resource="&HP;HarryPotter"/>
+        <untitled-ontology-229:isParentOf rdf:resource="&untitled-ontology-229;HarryPotter"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/LilyPotter -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/LilyPotter -->
 
-    <owl:NamedIndividual rdf:about="&HP;LilyPotter">
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;LilyPotter">
+        <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#LilyPotter"/>
-        <HP:isParentOf rdf:resource="&HP;HarryPotter"/>
+        <untitled-ontology-229:isParentOf rdf:resource="&untitled-ontology-229;HarryPotter"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/LordVoldemort -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/LordVoldemort -->
 
-    <owl:NamedIndividual rdf:about="&HP;LordVoldemort">
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;LordVoldemort">
+        <rdf:type rdf:resource="&untitled-ontology-229;DarkWizard"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#LordVoldemort"/>
-        <HP:isOwnerOf rdf:resource="&HP;Nagini"/>
+        <untitled-ontology-229:isOwnerOf rdf:resource="&untitled-ontology-229;Nagini"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/LuciusMalfoy -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/LuciusMalfoy -->
 
-    <owl:NamedIndividual rdf:about="&HP;LuciusMalfoy">
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;LuciusMalfoy">
+        <rdf:type rdf:resource="&untitled-ontology-229;Deatheater"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#LuciusMalfoy"/>
-        <HP:isParentOf rdf:resource="&HP;DracoMalfoy"/>
+        <untitled-ontology-229:isParentOf rdf:resource="&untitled-ontology-229;DracoMalfoy"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/MinervaMcGonigle -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/MinervaMcGonigle -->
 
-    <owl:NamedIndividual rdf:about="&HP;MinervaMcGonigle"/>
-    
-
-
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/MirrorOfErised -->
-
-    <owl:NamedIndividual rdf:about="&HP;MirrorOfErised">
-        <rdf:type rdf:resource="&HP;Mirror"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;MinervaMcGonigle">
+        <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
+        <rdf:type rdf:resource="&untitled-ontology-229;Professor"/>
+        <rdf:type rdf:resource="&untitled-ontology-229;Shapeshifter"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/MollyWeasley -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/MirrorOfErised -->
 
-    <owl:NamedIndividual rdf:about="&HP;MollyWeasley">
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;MirrorOfErised">
+        <rdf:type rdf:resource="&untitled-ontology-229;Mirror"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/MollyWeasley -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;MollyWeasley">
+        <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#MollyWeasley"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#MollyWeasly"/>
-        <HP:isParentOf rdf:resource="&HP;GinnyWeasley"/>
-        <HP:isParentOf rdf:resource="&HP;RonaldWeasley"/>
+        <untitled-ontology-229:isParentOf rdf:resource="&untitled-ontology-229;GinnyWeasley"/>
+        <untitled-ontology-229:isParentOf rdf:resource="&untitled-ontology-229;RonaldWeasley"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/Nagini -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/Nagini -->
 
-    <owl:NamedIndividual rdf:about="&HP;Nagini"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;Nagini">
+        <rdf:type rdf:resource="&untitled-ontology-229;Snake"/>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/PeterPettigrew -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/PeterPettigrew -->
 
-    <owl:NamedIndividual rdf:about="&HP;PeterPettigrew"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;PeterPettigrew">
+        <rdf:type rdf:resource="&untitled-ontology-229;DarkWizard"/>
+        <rdf:type rdf:resource="&untitled-ontology-229;Shapeshifter"/>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/PetuniaDursley -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/PetuniaDursley -->
 
-    <owl:NamedIndividual rdf:about="&HP;PetuniaDursley">
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;PetuniaDursley">
+        <rdf:type rdf:resource="&untitled-ontology-229;Muggle"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#PetuniaDursley"/>
-        <HP:isParentOf rdf:resource="&HP;DudleyDursley"/>
+        <untitled-ontology-229:isParentOf rdf:resource="&untitled-ontology-229;DudleyDursley"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/PhilosophersStone -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/PhilosophersStone -->
 
-    <owl:NamedIndividual rdf:about="&HP;PhilosophersStone">
-        <rdf:type rdf:resource="&HP;Stone"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;PhilosophersStone">
+        <rdf:type rdf:resource="&untitled-ontology-229;Stone"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/RavenclawHouse -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/RavenclawHouse -->
 
-    <owl:NamedIndividual rdf:about="&HP;RavenclawHouse">
-        <rdf:type rdf:resource="&HP;House"/>
-        <HP:isHouseOf rdf:resource="&HP;Hogwarts"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;RavenclawHouse">
+        <rdf:type rdf:resource="&untitled-ontology-229;House"/>
+        <untitled-ontology-229:isHouseOf rdf:resource="&untitled-ontology-229;Hogwarts"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/RemusLupin -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/RemusLupin -->
 
-    <owl:NamedIndividual rdf:about="&HP;RemusLupin"/>
-    
-
-
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/ResurrectionStone -->
-
-    <owl:NamedIndividual rdf:about="&HP;ResurrectionStone">
-        <rdf:type rdf:resource="&HP;Stone"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;RemusLupin">
+        <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
+        <rdf:type rdf:resource="&untitled-ontology-229;Werewolf"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/RonaldWeasley -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/ResurrectionStone -->
 
-    <owl:NamedIndividual rdf:about="&HP;RonaldWeasley">
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;ResurrectionStone">
+        <rdf:type rdf:resource="&untitled-ontology-229;Stone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/RonaldWeasley -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;RonaldWeasley">
+        <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
+        <rdf:type rdf:resource="&untitled-ontology-229;Student"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#RonaldWeasley"/>
-        <HP:isChildOf rdf:resource="&HP;ArthurWeasley"/>
-        <HP:isHouseMemberOf rdf:resource="&HP;GryffindorHouse"/>
-        <HP:isStudentOf rdf:resource="&HP;Hogwarts"/>
-        <HP:isChildOf rdf:resource="&HP;MollyWeasley"/>
+        <untitled-ontology-229:isChildOf rdf:resource="&untitled-ontology-229;ArthurWeasley"/>
+        <untitled-ontology-229:isHouseMemberOf rdf:resource="&untitled-ontology-229;GryffindorHouse"/>
+        <untitled-ontology-229:isStudentOf rdf:resource="&untitled-ontology-229;Hogwarts"/>
+        <untitled-ontology-229:isChildOf rdf:resource="&untitled-ontology-229;MollyWeasley"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/RubeusHagrid -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/RubeusHagrid -->
 
-    <owl:NamedIndividual rdf:about="&HP;RubeusHagrid"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;RubeusHagrid">
+        <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
+        <rdf:type rdf:resource="&untitled-ontology-229;Professor"/>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/SeverusSnape -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/SeverusSnape -->
 
-    <owl:NamedIndividual rdf:about="&HP;SeverusSnape"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;SeverusSnape">
+        <rdf:type rdf:resource="&untitled-ontology-229;Professor"/>
+        <rdf:type rdf:resource="&untitled-ontology-229;Wizard"/>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/SiriusBlack -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/SiriusBlack -->
 
-    <owl:NamedIndividual rdf:about="&HP;SiriusBlack"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;SiriusBlack">
+        <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
+        <rdf:type rdf:resource="&untitled-ontology-229;Shapeshifter"/>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/SlytherinHouse -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/SlytherinHouse -->
 
-    <owl:NamedIndividual rdf:about="&HP;SlytherinHouse">
-        <rdf:type rdf:resource="&HP;House"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;SlytherinHouse">
+        <rdf:type rdf:resource="&untitled-ontology-229;House"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#SlytherinHouse"/>
-        <HP:isHouseOf rdf:resource="&HP;Hogwarts"/>
+        <untitled-ontology-229:isHouseOf rdf:resource="&untitled-ontology-229;Hogwarts"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/TheCloakOfInvisibility -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/TheCloakOfInvisibility -->
 
-    <owl:NamedIndividual rdf:about="&HP;TheCloakOfInvisibility">
-        <rdf:type rdf:resource="&HP;Cloak"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;TheCloakOfInvisibility">
+        <rdf:type rdf:resource="&untitled-ontology-229;Cloak"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#TheCloakOfInvisibility"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#theClockofInvisibility"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/HP/VernonDursley -->
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/VernonDursley -->
 
-    <owl:NamedIndividual rdf:about="&HP;VernonDursley">
+    <owl:NamedIndividual rdf:about="&untitled-ontology-229;VernonDursley">
+        <rdf:type rdf:resource="&untitled-ontology-229;Muggle"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#VernonDursley"/>
-        <HP:isParentOf rdf:resource="&HP;DudleyDursley"/>
+        <untitled-ontology-229:isParentOf rdf:resource="&untitled-ontology-229;DudleyDursley"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
